@@ -2,7 +2,6 @@
 
 const URL = 'https://api.themoviedb.org/3/discover/movie?api_key=30170f3751cc29da3d08369d25340c51&language=en-US&with_genres='
 
-
 const mForm = document.querySelector(".movieForm")
 console.log(mForm)
 mForm.addEventListener("submit", selectGenre)
@@ -14,14 +13,23 @@ function selectGenre(e){
   // const genre = option.value 
   const genreOpt = e.target.querySelector("#genres")
   const genre = genreOpt.options[genreOpt.selectedIndex].value
-
   fetchMovie(genre)
 }
+
 function fetchMovie(genre){
   const pageNo = Math.floor(Math.random() * 101)
   let requestURL = `${URL}${genre}&page=${pageNo}`
-  fetch(requestURL).then(resp => resp.json()).then(console.log)
-  console.log(requestURL)
+  fetch(requestURL).then(resp => resp.json()).then(renderMovie)
+}
+
+function renderMovie(movie){
+
+  // console.log(movie.results[0].original_title)
+  const movieRec = document.createElement("div");
+  movieRec.className = 'rec'
+  movieRec.innerText = movie.results[0].original_title
+  const movieContainer = document.querySelector(".movie-container")
+  movieContainer.append(movieRec)
 }
 
 
