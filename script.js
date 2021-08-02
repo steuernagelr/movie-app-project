@@ -1,14 +1,12 @@
+// genre list https://api.themoviedb.org/3/genre/movie/list?api_key=30170f3751cc29da3d08369d25340c51&language=en-US
+
 const URL = 'https://api.themoviedb.org/3/discover/movie?api_key=30170f3751cc29da3d08369d25340c51&language=en-US&with_genres='
-const action = 28
-const comedy = 35
-const drama = 18
-const fantasy = 14
-const history = 36
-const horror = 27
+
 
 const mForm = document.querySelector(".movieForm")
 console.log(mForm)
 mForm.addEventListener("submit", selectGenre)
+
 
 function selectGenre(e){
   e.preventDefault()
@@ -16,11 +14,9 @@ function selectGenre(e){
   // const genre = option.value 
   const genreOpt = e.target.querySelector("#genres")
   const genre = genreOpt.options[genreOpt.selectedIndex].value
-  
-  fetchMovie(genre)
-  
-}
 
+  fetchMovie(genre)
+}
 function fetchMovie(genre){
   const pageNo = Math.floor(Math.random() * 101)
   let requestURL = `${URL}${genre}&page=${pageNo}`
