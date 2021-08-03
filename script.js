@@ -82,6 +82,7 @@ function renderMovie(movie) {
   movieCard.append(movieTitle, moviePoster, saveBttn);
   movieContainer.append(movieCard)
 }
+
 function saveMovie(e, movieCard){
 e.preventDefault();
 const movieList = document.querySelector(".movieList")
