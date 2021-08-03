@@ -6,11 +6,11 @@
     <title>Movie App</title>
   </head>
   <body>
-    <div class ="wrapper">
-    <div class ="row">
-      <div class="side">
+    <div class ="container">
+    <div class ="left">
+
         <form class="movieForm">
-          <h1>what should we watch?</h1>
+          <h1>Choose a movie for me!</h1>
           <label for="genres">Choose a genre</label>
           <select id="genres" name="genres">
             <option value="action">action</option>
@@ -21,15 +21,11 @@
           </select>
           <input type="submit"></form>
         </div>
-      <div class="movie-container main">
-      </div>
-      <div class="movieList">
-      </div>
-    </div>
-    </div>
-  </div>
 
-    <div class="movieList">
+      <div class="middle movie-container">
+      </div>
+
+    <div class="right movieList">
       <form id="review-form">
         <input id='new_review' type='text' placeholder='Leave a movie review...'/>
         <br/>
@@ -37,14 +33,13 @@
         type='submit'
         value='submit'/>
       </form>
-    </div>
+  
       <div id='review-container'>
         <p>Fast&Furious is a movie about FAMILY and nothing else.</p>
         <p>Inception was confusing, but I liked when they walked on the walls! 5 stars!</p>
       </div>
-
-
-
+    </div>
+  </div>
     <script src="script.js"></script> 
 
 </body>
