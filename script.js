@@ -91,14 +91,13 @@ movieListContainer.append(movieCard)
 }
 
 
-function leaveAReview() {
-  const reviewForm = document.querySelector("#review-form");
-  reviewForm.addEventListener("submit", (e) => {
-    e.preventDefault();
-    handleReview(e.target.new_review.value);
-    reviewForm.reset();
-  });
-}
+const reviewForm = document.querySelector("#review-form");
+console.log(reviewForm)
+reviewForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+  handleReview(e.target.new_review.value);
+  reviewForm.reset();
+});
 
 function handleReview(review) {
   const reviewLeft = document.createElement("p");
