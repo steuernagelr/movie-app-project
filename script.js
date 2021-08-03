@@ -12,7 +12,7 @@ function fetchGenre(e) {
   const genreURL =
     "https://api.themoviedb.org/3/genre/movie/list?api_key=30170f3751cc29da3d08369d25340c51";
   
-    console.log("works")
+  console.log("works")
   fetch(genreURL)
     .then((resp) => resp.json())
     .then((genreObj) => genreLookup(genreObj.genres));
@@ -42,16 +42,6 @@ function genreLookup(genreTable) {
   // for (const genre in genreTable.genres) {
   //   console.log(`${genre}: ${genreTable[genre]}`);
 }
-
-// function selectGenre(e) {
-//   e.preventDefault();
-//   // let option = document.querySelector("option");
-//   // const genre = option.value
-//   const genreOpt = e.target.querySelector("#genres");
-//   const genre = genreOpt.options[genreOpt.selectedIndex].value;
-//   fetchMovie(genre);
-//   console.log(genre);
-// }
 
 function fetchMovie(genre) {
   const pageNo = Math.floor(Math.random() * 501) + 1;
@@ -104,35 +94,3 @@ function renderMovie(movie) {
   movieCard.append(movieTitle, moviePoster);
   movieContainer.append(movieCard);
 }
-
-// fetch(requestURL).then(resp => resp.json()).then(console.log)
-// console.log(requestURL)
-
-// genres": [
-//   {
-//   "id": 28,
-//   "name": "Action"
-//   "id": 35,
-//   "name": "Comedy"
-//   "id": 99,
-//   "name": "Documentary"
-//   "id": 18,
-//   "name": "Drama"
-//   "id": 14,
-//   "name": "Fantasy"
-//   "id": 36,
-//   "name": "History"
-//   "id": 27,
-//   "name": "Horror"
-//   "id": 10402,
-//   "name": "Music"
-//   "id": 9648,
-//   "name": "Mystery"
-//   "id": 10749,
-//   "name": "Romance"
-//   "id": 878,
-//   "name": "Science Fiction"
-//   "id": 53,
-//   "name": "Thriller"
-//   ]
-//   }

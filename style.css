@@ -1,21 +1,6 @@
-/* .fade-in {
-  animation: fadeIn 4.2s;
-} */
-
 .fade-in {
   animation: fadeIn .5s;
 }
-
-/* @keyframes fadeIn {
-  0% {
-    opacity: 0;
-    top: 6rem;
-  }
-  100% {
-    opacity: 0.5;
-    top: 4.4rem;
-  }
-} */
 
 @keyframes fadeIn {
   0% {
@@ -26,3 +11,31 @@
     opacity: 1;
   }
 }
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  flex: 1;
+
+}
+.row {  
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+}
+
+  .side {
+  flex: 20%;
+  align-items: center;
+  justify-content: center;
+  margin-top: 200px;
+  margin-left: 50px;
+  }
+
+  .main {
+    flex: 50%;
+    align-items: center;
+    justify-content: center;
+    margin-left: 50px;
+  }
