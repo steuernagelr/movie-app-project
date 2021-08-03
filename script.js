@@ -94,3 +94,21 @@ function renderMovie(movie) {
   movieCard.append(movieTitle, moviePoster);
   movieContainer.append(movieCard);
 }
+
+leaveAReview()
+
+function leaveAReview(){
+    const reviewForm = document.querySelector('#review-form')
+    reviewForm.addEventListener('submit', (e) => {
+        e.preventDefault()
+        handleReview(e.target.new_review.value)
+        reviewForm.reset()
+    })
+}
+
+function handleReview(review){
+
+    const reviewLeft = document.createElement('p')
+    reviewLeft.textContent = review
+    document.querySelector('#review-container').appendChild(reviewLeft)
+}
