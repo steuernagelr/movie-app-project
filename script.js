@@ -68,31 +68,34 @@ function renderMovie(movie) {
   const moviePoster = document.createElement("img");
   const basePosterURL = "https://image.tmdb.org/t/p/w400";
   moviePoster.src = basePosterURL + movie.results[movieIndex].poster_path;
+  const imgURL = moviePoster.src;
   moviePoster.className = "movie-poster";
- 
-  console.log(moviePoster.src);
+
+  const movieContainer = document.querySelector(".movie-container");
+
+  const saveBttn = document.createElement("button");
+  saveBttn.textContent = "save";
+  saveBttn.addEventListener("click", (e) => saveMovie(e, movieCard, imgURL));
+
+  movieCard.append(movieTitle, moviePoster);
+  movieContainer.innerHTML = " ";
+  movieContainer.append(saveBttn, movieCard);
+}
+
+function saveMovie(e, movieCard) {
   const movieContainer = document.querySelector(".movie-container");
   movieContainer.innerHTML = " ";
-
-
-  const saveBttn = document.createElement("button")
-  saveBttn.textContent = "save"
-  saveBttn.addEventListener("click", e => saveMovie(e, movieCard))
-
-  movieCard.append(movieTitle, moviePoster, saveBttn);
-  movieContainer.append(movieCard)
+  e.preventDefault();
+  const movieList = document.querySelector(".movieList");
+  // const savedImg = document.createElement("img")
+  // savedImg.src = imgURL
+  // savedImg.className = "img-size"
+  // console.log(savedImg)
+  movieList.append(movieCard);
 }
-
-function saveMovie(e, movieCard){
-e.preventDefault();
-const movieList = document.querySelector(".movieList")
-movieList.append(movieCard)
-
-}
-
 
 const reviewForm = document.querySelector("#review-form");
-console.log(reviewForm)
+console.log(reviewForm);
 reviewForm.addEventListener("submit", (e) => {
   e.preventDefault();
   handleReview(e.target.new_review.value);

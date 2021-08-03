@@ -21,7 +21,14 @@
   flex: 1;
 }
 
-@media screen and (max-width:200px) {
+.movieList img {
+  max-width: 50%;
+  height:auto;
+
+}
+
+
+@media screen and (max-width:500px) {
   .flex-grid {
     display: block;
     .col {
