@@ -79,36 +79,37 @@ function renderMovie(movie) {
   const basePosterURL = "https://image.tmdb.org/t/p/w400";
   moviePoster.src = basePosterURL + movie.results[movieIndex].poster_path;
   moviePoster.className = "movie-poster";
-  // if (moviePoster.classList.contains("fade-in2")) {
-  //   moviePoster.classList.remove("fade-in2");
-  //   moviePoster.classList.add("fade-in2");
-  // } else {
-  //   moviePoster.classList.add("fade-in2");
-  // }
-
-  // console.log (random)
+ 
   console.log(moviePoster.src);
   const movieContainer = document.querySelector(".movie-container");
   movieContainer.innerHTML = " ";
 
-  movieCard.append(movieTitle, moviePoster);
-  movieContainer.append(movieCard);
+
+  const saveBttn = document.createElement("button")
+  saveBttn.textContent = "save"
+  saveBttn.addEventListener("click", e => saveMovie(e, movieCard))
+
+  movieCard.append(movieTitle, moviePoster, saveBttn);
+  movieContainer.append(movieCard)
+}
+function saveMovie(e, movieCard){
+e.preventDefault();
+const movieList = document.querySelector(".movieList")
+movieList.append(movieCard)
+
 }
 
-leaveAReview()
 
-function leaveAReview(){
-    const reviewForm = document.querySelector('#review-form')
-    reviewForm.addEventListener('submit', (e) => {
-        e.preventDefault()
-        handleReview(e.target.new_review.value)
-        reviewForm.reset()
-    })
-}
+const reviewForm = document.querySelector("#review-form");
+console.log(reviewForm)
+reviewForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+  handleReview(e.target.new_review.value);
+  reviewForm.reset();
+});
 
-function handleReview(review){
-
-    const reviewLeft = document.createElement('p')
-    reviewLeft.textContent = review
-    document.querySelector('#review-container').appendChild(reviewLeft)
+function handleReview(review) {
+  const reviewLeft = document.createElement("p");
+  reviewLeft.textContent = review;
+  document.querySelector("#review-container").appendChild(reviewLeft);
 }
