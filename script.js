@@ -5,18 +5,17 @@ const URL =
 
 const mForm = document.querySelector(".movieForm");
 console.log(mForm);
-mForm.addEventListener("submit", e => fetchGenre(e));
+mForm.addEventListener("submit", fetchGenre);
 
 function fetchGenre(e) {
-  e.preventDefault()
+  e.preventDefault();
   const genreURL =
     "https://api.themoviedb.org/3/genre/movie/list?api_key=30170f3751cc29da3d08369d25340c51";
-  
-  console.log("works")
+
+  console.log("works");
   fetch(genreURL)
     .then((resp) => resp.json())
     .then((genreObj) => genreLookup(genreObj.genres));
-
 }
 
 function genreLookup(genreTable) {
@@ -33,14 +32,6 @@ function genreLookup(genreTable) {
   const movieId = result[0].id;
 
   fetchMovie(movieId);
-  // const res = genreTable.forEach(e => {
-  //   if (e.name.toLowerCase() === genreName)
-  //   console.log(e.name.toLowerCase())
-  //   return e.id
-  // })
-
-  // for (const genre in genreTable.genres) {
-  //   console.log(`${genre}: ${genreTable[genre]}`);
 }
 
 function fetchMovie(genre) {
@@ -72,43 +63,45 @@ function renderMovie(movie) {
   movieTitle.className = "movie-title";
 
   const movieIndex = Math.floor(Math.random() * 21);
-  // console.log(movieIndex);
   movieTitle.innerText = movie.results[movieIndex].original_title;
 
   const moviePoster = document.createElement("img");
   const basePosterURL = "https://image.tmdb.org/t/p/w400";
   moviePoster.src = basePosterURL + movie.results[movieIndex].poster_path;
   moviePoster.className = "movie-poster";
-  // if (moviePoster.classList.contains("fade-in2")) {
-  //   moviePoster.classList.remove("fade-in2");
-  //   moviePoster.classList.add("fade-in2");
-  // } else {
-  //   moviePoster.classList.add("fade-in2");
-  // }
-
-  // console.log (random)
-  console.log(moviePoster.src);
+  
   const movieContainer = document.querySelector(".movie-container");
   movieContainer.innerHTML = " ";
 
-  movieCard.append(movieTitle, moviePoster);
+  movieContainer.append(movieCard);
+
+  const saveButton = document.createElement('button')
+  saveButton.textContent = "Save"
+  saveButton.addEventListener("click", e => saveMovie(movieCard))
+
+  movieCard.append(movieTitle, moviePoster, saveButton);
   movieContainer.append(movieCard);
 }
 
-leaveAReview()
+function saveMovie(movieCard) {
+console.log(movieCard)
+const movieListContainer = document.querySelector(".movieList")
+movieListContainer.append(movieCard)
 
-function leaveAReview(){
-    const reviewForm = document.querySelector('#review-form')
-    reviewForm.addEventListener('submit', (e) => {
-        e.preventDefault()
-        handleReview(e.target.new_review.value)
-        reviewForm.reset()
-    })
 }
 
-function handleReview(review){
 
-    const reviewLeft = document.createElement('p')
-    reviewLeft.textContent = review
-    document.querySelector('#review-container').appendChild(reviewLeft)
+function leaveAReview() {
+  const reviewForm = document.querySelector("#review-form");
+  reviewForm.addEventListener("submit", (e) => {
+    e.preventDefault();
+    handleReview(e.target.new_review.value);
+    reviewForm.reset();
+  });
+}
+
+function handleReview(review) {
+  const reviewLeft = document.createElement("p");
+  reviewLeft.textContent = review;
+  document.querySelector("#review-container").appendChild(reviewLeft);
 }
