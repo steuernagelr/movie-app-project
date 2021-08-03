@@ -17,7 +17,7 @@
   flex-direction: column;
   min-height: 100vh;
   flex: 1;
-
+git p
 }
 .row {  
   display: flex;
@@ -25,17 +25,17 @@
   flex: 1;
 }
 
-  .side {
-  flex: 20%;
+.side {
+flex: 20%;
+align-items: center;
+justify-content: center;
+margin-top: 200px;
+margin-left: 50px;
+}
+
+.main {
+  flex: 50%;
   align-items: center;
   justify-content: center;
-  margin-top: 200px;
   margin-left: 50px;
-  }
-
-  .main {
-    flex: 50%;
-    align-items: center;
-    justify-content: center;
-    margin-left: 50px;
-  }
+}

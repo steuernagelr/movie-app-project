@@ -5,18 +5,17 @@ const URL =
 
 const mForm = document.querySelector(".movieForm");
 console.log(mForm);
-mForm.addEventListener("submit", e => fetchGenre(e));
+mForm.addEventListener("submit", fetchGenre);
 
 function fetchGenre(e) {
-  e.preventDefault()
+  e.preventDefault();
   const genreURL =
     "https://api.themoviedb.org/3/genre/movie/list?api_key=30170f3751cc29da3d08369d25340c51";
-  
-  console.log("works")
+
+  console.log("works");
   fetch(genreURL)
     .then((resp) => resp.json())
     .then((genreObj) => genreLookup(genreObj.genres));
-
 }
 
 function genreLookup(genreTable) {
@@ -33,14 +32,6 @@ function genreLookup(genreTable) {
   const movieId = result[0].id;
 
   fetchMovie(movieId);
-  // const res = genreTable.forEach(e => {
-  //   if (e.name.toLowerCase() === genreName)
-  //   console.log(e.name.toLowerCase())
-  //   return e.id
-  // })
-
-  // for (const genre in genreTable.genres) {
-  //   console.log(`${genre}: ${genreTable[genre]}`);
 }
 
 function fetchMovie(genre) {
@@ -72,7 +63,6 @@ function renderMovie(movie) {
   movieTitle.className = "movie-title";
 
   const movieIndex = Math.floor(Math.random() * 21);
-  // console.log(movieIndex);
   movieTitle.innerText = movie.results[movieIndex].original_title;
 
   const moviePoster = document.createElement("img");
