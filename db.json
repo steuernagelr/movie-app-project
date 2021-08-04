@@ -2,333 +2,322 @@
   "movieList": [
     {
       "adult": false,
-      "backdrop_path": "/ozzgztvV7blX6uJp1btQi3voP2r.jpg",
-      "genre_ids": [
-        28,
-        12
-      ],
-      "id": 604872,
-      "original_language": "zh",
-      "original_title": "天·火",
-      "overview": "Tianhuo Island is a beautiful paradise. It almost makes people forget that it is located in the \"Ring of Fire\", the world-famous Pacific Rim volcanic belt. Young geologist Li Xiaomeng brings her team here to develop the first volcanic monitoring system, the Suzaku. Li Xiaomeng's father, Li Wentao, a volcanic expert who has retired for many years, rushes to the crater after learning about it, trying to persuade her to leave. At the same time, expedition expert Zheng Nan dives in the beautiful underwater cave, preparing to give his girlfriend Jiahui a romantic proposal. The volcano erupts, and the fate of these people are entangled. In order to see tomorrow, they must work together to find a way to survive.",
-      "popularity": 12.667,
-      "poster_path": "/dDf8M1yMwvBVe8VtOKxCpOog8CF.jpg",
-      "release_date": "2019-12-12",
-      "title": "Skyfire",
-      "video": false,
-      "vote_average": 6.7,
-      "vote_count": 144
-    },
-    {
-      "adult": false,
-      "backdrop_path": "/ynCh3c4wUuC9HM0LOVBUuya83pc.jpg",
-      "genre_ids": [
-        28,
-        80
-      ],
-      "id": 190754,
-      "original_language": "tl",
-      "original_title": "On the Job",
-      "overview": "On The Job is about the ambitions and passions of four men trying to make a living, for themselves and their families. It shows the parallels between two prison inmates who are contract killers, and the two agents of the law investigating the murders. As they get caught in a web of machination of corrupt government officials, their jobs lead them on a head-on collision against each other with their loved ones as collateral damage.",
-      "popularity": 4.746,
-      "poster_path": "/pPVJvFBBo8mtWvSmzxE4nIZteaR.jpg",
-      "release_date": "2013-05-23",
-      "title": "On the Job",
-      "video": false,
-      "vote_average": 6.5,
-      "vote_count": 54
-    },
-    {
-      "adult": false,
-      "backdrop_path": "/toSNGrfYL2OZzvekTPuWyAlzG7e.jpg",
-      "genre_ids": [
-        18
-      ],
-      "id": 52505,
-      "original_language": "en",
-      "original_title": "The Other Woman",
-      "overview": "Emilia, a law-school graduate, falls in love with her married boss, Jack. After Emilia marries Jack, her happiness turns unexpectedly to grief following the death of her infant daughter. Devastated, Emilia nonetheless carries on, attempting to forge a connection with her stepson William and to resist the interference of Jack's jealous ex-wife.",
-      "popularity": 8.753,
-      "poster_path": "/bL7E576TENzL2d59HiXkXcEhy9N.jpg",
-      "release_date": "2010-10-28",
-      "title": "The Other Woman",
-      "video": false,
-      "vote_average": 6.2,
-      "vote_count": 298
-    },
-    {
-      "adult": false,
-      "backdrop_path": "/uehwVV9xuALZ2SXeHGiX4Ay5dR7.jpg",
-      "genre_ids": [
-        878,
-        16,
-        28
-      ],
-      "id": 618355,
-      "original_language": "en",
-      "original_title": "Superman: Red Son",
-      "overview": "Set in the thick of the Cold War, Red Son introduces us to a Superman who landed in the USSR during the 1950s and grows up to become a Soviet symbol that fights for the preservation of Stalin’s brand of communism.",
-      "popularity": 17.868,
-      "poster_path": "/frSfz7olCSQsp2SmTyu2ciGGQiX.jpg",
-      "release_date": "2020-02-24",
-      "title": "Superman: Red Son",
-      "video": false,
-      "vote_average": 7.3,
-      "vote_count": 583
-    },
-    {
-      "adult": false,
-      "backdrop_path": null,
-      "genre_ids": [
-        28
-      ],
-      "id": 445033,
-      "original_language": "en",
-      "original_title": "Spider-Man",
-      "overview": "Spider-man must rescue the beautiful daughter of the evil Dr. Lightning.",
-      "popularity": 3.141,
-      "poster_path": "/iYBfBk1i9zjN9Vybbj8UgTYzkyv.jpg",
-      "release_date": "1969-01-01",
-      "title": "Spider-Man",
-      "video": false,
-      "vote_average": 7.2,
-      "vote_count": 8
-    },
-    {
-      "adult": false,
-      "backdrop_path": null,
-      "genre_ids": [
-        28,
-        35,
-        27,
-        878
-      ],
-      "id": 39260,
-      "original_language": "ja",
-      "original_title": "ロボゲイシャ",
-      "overview": "Sisters Yoshie and Kikue are two Geisha who are abducted by a mysterious organization to be transformed into murderous cyborg assassins.",
-      "popularity": 2.027,
-      "poster_path": "/7fN1ZDG7sumIgndF8KfzEAvzkL8.jpg",
-      "release_date": "2009-10-03",
-      "title": "RoboGeisha",
-      "video": false,
-      "vote_average": 5.5,
-      "vote_count": 44
-    },
-    {
-      "adult": false,
-      "backdrop_path": "/sBfyZocy8sDmRNgQ9BoRwdexAWT.jpg",
+      "backdrop_path": "/c0izdYdnTe4uMRifHgvTA85wPz0.jpg",
       "genre_ids": [
         28,
         12,
-        35
+        27,
+        80
       ],
-      "id": 28677,
+      "id": 503736,
       "original_language": "en",
-      "original_title": "Without a Paddle: Nature's Calling",
-      "overview": "Venturing into the woods causes nothing but trouble and hilarity for three misguided males in this straight to video spin-off of 2004's \"Without A Paddle\".",
-      "popularity": 5.034,
-      "poster_path": "/mXgC6OcN2UElZTB0CAQpJQ34zfD.jpg",
-      "release_date": "2009-01-13",
-      "title": "Without a Paddle: Nature's Calling",
+      "original_title": "Army of the Dead",
+      "overview": "Following a zombie outbreak in Las Vegas, a group of mercenaries take the ultimate gamble: venturing into the quarantine zone to pull off the greatest heist ever attempted.",
+      "popularity": 1002.756,
+      "poster_path": "/z8CExJekGrEThbpMXAmCFvvgoJR.jpg",
+      "release_date": "2021-05-14",
+      "title": "Army of the Dead",
       "video": false,
-      "vote_average": 5,
-      "vote_count": 50
+      "vote_average": 6.4,
+      "vote_count": 2069
     },
     {
       "adult": false,
-      "backdrop_path": "/3k1PKmzNEosWFaOR1yC9ZKIYqmm.jpg",
+      "backdrop_path": "/cu8TWCQcLSlM0AdpFJaJrZtUsSU.jpg",
       "genre_ids": [
-        14,
-        16,
-        28,
-        878
+        35,
+        10402,
+        10770,
+        10749
       ],
-      "id": 23527,
-      "original_language": "ru",
-      "original_title": "Первый отряд",
-      "overview": "Set during the opening days of World War II on the Eastern Front. Its main cast are a group of Soviet teenagers with extraordinary abilities; the teenagers have been drafted to form a special unit to fight the invading German army. They are opposed by a Schutzstaffel officer who is attempting to raise from the dead a supernatural army of crusaders from the 12th-century Order of the Sacred Cross.",
-      "popularity": 4.334,
-      "poster_path": "/axwP67tbsJwGrQTZfEotyNQsArc.jpg",
-      "release_date": "2009-05-13",
-      "title": "First Squad: The Moment of Truth",
-      "video": false,
-      "vote_average": 6.3,
-      "vote_count": 86
-    },
-    {
-      "adult": false,
-      "backdrop_path": "/p9BAiTnq6Cz2YA6zo4L89KL8vCa.jpg",
-      "genre_ids": [
-        28,
-        18
-      ],
-      "id": 23916,
+      "id": 273671,
       "original_language": "en",
-      "original_title": "Paradise Alley",
-      "overview": "Sylvester Stallone is fighting the odds again, this time in the wrestling ring. As Cosmo Carboni, he and his two brothers dream of getting out of Hell's Kitchen (circa 1946) and into the big time. The exit signs point to Paradise Alley, a sleazy private club where the floorshow consists of raucous wrestling matches with big purses. Stallone not only starred in and wrote this action-packed film, he also made his directorial debut in this tale of three guys who could take anything Hell's Kitchen could dish out.",
-      "popularity": 9.22,
-      "poster_path": "/oHD8a1zEXMaUmJCXO9SeBMMiu97.jpg",
-      "release_date": "1978-09-22",
-      "title": "Paradise Alley",
+      "original_title": "Christmas Crush",
+      "overview": "Twenty-eight-year-old Georgia is convinced the man of her dreams is \"the one that got away\" back in high school. When Georgia learns of her high school reunion a week before Christmas, she's ecstatic to finally have her chance to win Craig back. But as she gets to relive high school for a night, she begins to realize it might not be Craig at all who got away, but Ben, an old friend with whom she'd fallen out of touch.",
+      "popularity": 2.01,
+      "poster_path": "/zCvEGqxB7s0c4BwyAIqG2NB72kw.jpg",
+      "release_date": "2012-11-17",
+      "title": "Christmas Crush",
       "video": false,
-      "vote_average": 5.5,
-      "vote_count": 70
+      "vote_average": 4.8,
+      "vote_count": 31
     },
     {
       "adult": false,
       "backdrop_path": null,
       "genre_ids": [
-        28,
-        53
+        27,
+        53,
+        10749
       ],
-      "id": 259282,
-      "original_language": "ta",
-      "original_title": "நிமிர்ந்து நில்",
-      "overview": "Aravind, a principled young man, takes on the corrupt officers in the government. They soon launch a counter-attack. Will Aravind emerge victorious or succumb to their wiles?",
-      "popularity": 2.491,
-      "poster_path": "/w2wWBgLGhPYEhjM1pYf5geDZ889.jpg",
-      "release_date": "2014-03-08",
-      "title": "Nimirndhu Nil",
+      "id": 28624,
+      "original_language": "en",
+      "original_title": "Embrace the Darkness",
+      "overview": "Vampires Galen and Miranda have just moved to Los Angeles. Galen wants to lay low and get his blood from a nearby blood bank while Miranda likes hers fresh, young, and virile. When Galen notices dancer Jennifer in the apartment next door, he falls in love and sets out to pursue her. Miranda becomes jealous and seduces Jennifer, too, while Jennifer's cop boyfriend Ryan senses that she is becoming too friendly with Galen and Miranda. Meanwhile, Ryan and Detective Turner have their hands full trying to figure out why bloodless bodies keep turning up with two puncture wounds on the neck.",
+      "popularity": 1.896,
+      "poster_path": "/gniW9Sv6ctHRbth3wgAh7IGc4Vw.jpg",
+      "release_date": "1999-10-05",
+      "title": "Embrace the Darkness",
       "video": false,
-      "vote_average": 7,
+      "vote_average": 1.7,
+      "vote_count": 3
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/1f3UG2JJjEZXJ83JxRikrTxFzFt.jpg",
+      "genre_ids": [
+        35,
+        28
+      ],
+      "id": 9622,
+      "original_language": "en",
+      "original_title": "Beverly Hills Ninja",
+      "overview": "Haru, an orphaned American who washes ashore in Japan and is mistaken for the great White Ninja of legend. Raised among the finest Ninjas, Haru grows strong and big - very big. With the grace of all Three Stooges rolled into one body, Haru is an embarrassment to his clan. But when a beautiful blonde pleads for his help, Haru is given one dangerous, disastrously funny chance to prove himself.",
+      "popularity": 9.75,
+      "poster_path": "/wAD7nnWh4e6wweffwmkLbf35uf0.jpg",
+      "release_date": "1997-01-17",
+      "title": "Beverly Hills Ninja",
+      "video": false,
+      "vote_average": 5.7,
+      "vote_count": 549
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/frs28rNadHbW4sCiAaf5wQ4bL7z.jpg",
+      "genre_ids": [
+        28
+      ],
+      "id": 24351,
+      "original_language": "en",
+      "original_title": "Flight of Fury",
+      "overview": "John, is sent in to recover a stolen Stealth Bomber. His trusty sidekick Rojar and John's ever faithful Jessica, fight the rebel forces of Banansistan, led by the vivacious Ellianna.",
+      "popularity": 4.581,
+      "poster_path": "/b0b2EY7VqDF8pp3ghTd02fiwCLx.jpg",
+      "release_date": "2007-02-20",
+      "title": "Flight of Fury",
+      "video": false,
+      "vote_average": 4.2,
+      "vote_count": 55
+    },
+    {
+      "adult": false,
+      "backdrop_path": null,
+      "genre_ids": [
+        27,
+        28
+      ],
+      "id": 48015,
+      "original_language": "en",
+      "original_title": "13Hrs",
+      "overview": "Sarah Tyler returns to her troubled family home in the isolated countryside, for a much put-off visit. As a storm rages outside, Sarah, her family and friends shore up for the night, cut off from the outside world. But something comes out of the driving rain and darkness. Something that holds a dark secret so devastating that, in one night, it could wipe out the entire family.",
+      "popularity": 5.628,
+      "poster_path": "/w0HG7FTIbJIotckZj07DEjNuD68.jpg",
+      "release_date": "2010-08-28",
+      "title": "13Hrs",
+      "video": false,
+      "vote_average": 4.7,
+      "vote_count": 49
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/erpYg6h8MnoT2BZqdlT0zABbbqK.jpg",
+      "genre_ids": [
+        28,
+        35,
+        80
+      ],
+      "id": 799497,
+      "original_language": "pt",
+      "original_title": "Cabras da Peste",
+      "overview": "Bruceuilis, a policeman from the countryside, is assigned to rescue Celestina, a goat considered heritage of his small city, and travels to São Paulo. There, he meets police clerk Trindade, who decides to venture out into the field, even though it is not his specialty.",
+      "popularity": 56.742,
+      "poster_path": "/rzcdLb0BhPaUJjD2jEcfRMiwOgh.jpg",
+      "release_date": "2021-03-18",
+      "title": "Get the Goat",
+      "video": false,
+      "vote_average": 7.1,
+      "vote_count": 133
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/xQzDpV5edHLmCM3n15pcatHynOd.jpg",
+      "genre_ids": [
+        878,
+        28,
+        14
+      ],
+      "id": 3115,
+      "original_language": "ja",
+      "original_title": "ゴジラ・エビラ・モスラ　南海の大決闘",
+      "overview": "Searching for his brother, Ryota stows away on a boat belonging to a criminal alongside two other teenagers. The group shipwrecks on Letchi island and discover the Infant Island natives have been enslaved by a terrorist organization controlling a crustacean monster. Finding a sleeping Godzilla, they decide to awaken him to defeat the terrorists and liberate the natives.",
+      "popularity": 10.816,
+      "poster_path": "/jQHdDxypUGTLyIDZHVmHC7mTgS2.jpg",
+      "release_date": "1966-12-17",
+      "title": "Ebirah, Horror of the Deep",
+      "video": false,
+      "vote_average": 6.3,
+      "vote_count": 107
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/raTkgc9I69MrTIoL7PlvbVhnwkN.jpg",
+      "genre_ids": [
+        28,
+        12,
+        18,
+        36
+      ],
+      "id": 19506,
+      "original_language": "ja",
+      "original_title": "ICHI",
+      "overview": "Ichi is a blind entertainer that travels the countryside with her traditional Japanese guitar and walking stick. She’s in search for the kind man that brought her up as a child, but because of her beauty she encounters problems every step of the way. Fortunately for Ichi, she is also a gifted swordswoman and carries a lethal blade within her walking stick.",
+      "popularity": 8.77,
+      "poster_path": "/oLiCuvbIci52akNwPhxI0uIOz1v.jpg",
+      "release_date": "2008-10-25",
+      "title": "ICHI",
+      "video": false,
+      "vote_average": 6.8,
+      "vote_count": 84
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/A2XoAOn0DFKhc3yFP4iNQ7dofso.jpg",
+      "genre_ids": [
+        28,
+        27
+      ],
+      "id": 462115,
+      "original_language": "en",
+      "original_title": "Dead Trigger",
+      "overview": "2021 - 5 years after the outbreak of a mysterious virus that turned humans into bloodthirsty, undead beasts much of the world’s population has been decimated. When governments were unable to keep the disease at bay, the Contagion Special Unit was formed with the toughest soldiers and best specialists to fight the infected. Because of the rapidly decreasing number of soldiers, a popular online video game Dead Trigger that mirrors the terrifying events was created. The best efforts of the gamers are monitored by the CSU who recruit the highest rated zombie killers. The young recruits are called “Dead Triggers”. The movie follows a group of young recruits who must travel to the origin of the outbreak to find a missing team of scientists who were searching for a cure.",
+      "popularity": 3.875,
+      "poster_path": "/xN5NWwTzTcTHRICad5gQEcjzGPG.jpg",
+      "release_date": "2017-07-19",
+      "title": "Dead Trigger",
+      "video": false,
+      "vote_average": 3.5,
+      "vote_count": 26
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/qfQGDBUuILDkRL5CPa897NAqcTZ.jpg",
+      "genre_ids": [
+        28,
+        80,
+        18,
+        53,
+        9648
+      ],
+      "id": 9333,
+      "original_language": "en",
+      "original_title": "Last Man Standing",
+      "overview": "John Smith is a mysterious stranger who is drawn into a vicious war between two Prohibition-era gangs. In a dangerous game, he switches allegiances from one to another, offering his services to the highest bidder. As the death toll mounts, Smith takes the law into his own hands in a deadly race to stay alive.",
+      "popularity": 7.708,
+      "poster_path": "/4yBM8DZmX5cGWAEIO6w9nCycJMe.jpg",
+      "release_date": "1996-09-20",
+      "title": "Last Man Standing",
+      "video": false,
+      "vote_average": 6.3,
+      "vote_count": 594
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/6fFYR5rXmk8EbWgDeOBg23AEEKf.jpg",
+      "genre_ids": [
+        28,
+        878
+      ],
+      "id": 448764,
+      "original_language": "nl",
+      "original_title": "Molly",
+      "overview": "A girl living alone in a post apocalyptic wasteland finds herself hunted down by marauders who want her to fight in their fighting pit for their entertainment.",
+      "popularity": 1.336,
+      "poster_path": "/1axtR1J3E5u6NS83qU3mnQVlB68.jpg",
+      "release_date": "2017-04-16",
+      "title": "Molly",
+      "video": false,
+      "vote_average": 5.4,
       "vote_count": 10
     },
     {
       "adult": false,
-      "backdrop_path": "/oCMqNtCtQkhWiwHmSAOWDd5lXMG.jpg",
+      "backdrop_path": "/jRGqzkU7rZ0aXoD2sxtWoyp7Fr4.jpg",
       "genre_ids": [
-        27,
-        28,
-        53,
-        878
-      ],
-      "id": 21513,
-      "original_language": "ja",
-      "original_title": "ムーンチャイルド",
-      "overview": "MOON CHILD follows a group of childhood friends as they advance in a futuristic criminal underworld. Sho feels he is doomed to walk in his idol Kei's footsteps as a vampire with the gift of eternal life and the curse of blood thirst. Over time, their tight friendship becomes corrupted because of their rivalry and love for the same woman.",
-      "popularity": 1.787,
-      "poster_path": "/eNw31trM3ZrdY4yYEv2hP4uEp8x.jpg",
-      "release_date": "2003-04-19",
-      "title": "Moon Child",
-      "video": false,
-      "vote_average": 5.5,
-      "vote_count": 22
-    },
-    {
-      "adult": false,
-      "backdrop_path": "/239kcgdIK5EdQdQ3VhpDPGsEpnV.jpg",
-      "genre_ids": [
-        28,
-        12
-      ],
-      "id": 38185,
-      "original_language": "en",
-      "original_title": "Hostage",
-      "overview": "The Driver is hired by the FBI to help defuse a hostage situation. A disgruntled employee has kidnapped a CEO and has hidden her, demanding $5,088,042. The Driver delivers the money, writing the sum on his hand as instructed by the hostage taker. After he is told that he holds the life of a person in his hand, he is ordered to burn the money. As he complies, the federal agents break in and attempt to subdue the man, who shoots himself in the head before he reveals where the woman is hidden. The Driver then tries to find the hostage before she drowns in the trunk of a sinking car. As a twist, the kidnapped woman is revealed to be the hostage taker's lover. She coldly taunts the dying man in the hospital.",
-      "popularity": 3.288,
-      "poster_path": "/d5CoQrPoN0h6h2BaZHAJNgWalJx.jpg",
-      "release_date": "2002-01-01",
-      "title": "Hostage",
-      "video": false,
-      "vote_average": 6.5,
-      "vote_count": 51
-    },
-    {
-      "adult": false,
-      "backdrop_path": "/b04VDxTiR3kSAKWJFviAu61LQY1.jpg",
-      "genre_ids": [
-        12,
-        28
-      ],
-      "id": 42242,
-      "original_language": "en",
-      "original_title": "Swashbuckler",
-      "overview": "A pirate and a hot-tempered noblewoman join forces to protect Jamaica from a tyrant.",
-      "popularity": 2.54,
-      "poster_path": "/xznGlcgHycODP1QtBPQfsll6bkJ.jpg",
-      "release_date": "1976-01-01",
-      "title": "Swashbuckler",
-      "video": false,
-      "vote_average": 6.2,
-      "vote_count": 20
-    },
-    {
-      "adult": false,
-      "backdrop_path": "/7kMyf5OBV4gLfQrV1sFZRHluH3v.jpg",
-      "genre_ids": [
-        28
-      ],
-      "id": 255268,
-      "original_language": "en",
-      "original_title": "Bad Ass 2: Bad Asses",
-      "overview": "Vietnam vet Frank Vega now runs an East L.A. community center where he trains young boxers to survive in and out of the ring. But when his prize student falls in with the wrong crowd and turns up dead, Frank teams up with his pal Bernie to take matters into their own fists and prove that justice never gets old.",
-      "popularity": 9.284,
-      "poster_path": "/h51RmbFvlkIszrAjJD40H2jLd9W.jpg",
-      "release_date": "2014-04-08",
-      "title": "Bad Ass 2: Bad Asses",
-      "video": false,
-      "vote_average": 6.1,
-      "vote_count": 139
-    },
-    {
-      "adult": false,
-      "backdrop_path": "/j3vV6gxD7USL13LSAN49pGun1X7.jpg",
-      "genre_ids": [
-        28,
+        18,
         53
       ],
-      "id": 44048,
-      "original_language": "en",
-      "original_title": "Unstoppable",
-      "overview": "A runaway train, transporting deadly, toxic chemicals, is barreling down on Stanton, Pennsylvania,  and proves to be unstoppable until a veteran engineer and young conductor risk their lives to try and stop it with a switch engine.",
-      "popularity": 16.436,
-      "poster_path": "/zKvHwL0GqLOear8rTnUPSTRYY0r.jpg",
-      "release_date": "2010-11-04",
-      "title": "Unstoppable",
+      "id": 376869,
+      "original_language": "hi",
+      "original_title": "नीरजा",
+      "overview": "Neerja is a portrayal on the life of the courageous Neerja Bhanot, who sacrificed her life while protecting the lives of 359 passengers on the Pan Am flight 73 in 1986. The flight was hijacked by a terrorist organization.",
+      "popularity": 7.042,
+      "poster_path": "/alDRJWHI1TfqB9ev6cMbVE5P92x.jpg",
+      "release_date": "2016-02-19",
+      "title": "Neerja",
       "video": false,
-      "vote_average": 6.5,
-      "vote_count": 2639
+      "vote_average": 7.5,
+      "vote_count": 169
     },
     {
       "adult": false,
-      "backdrop_path": null,
-      "genre_ids": [
-        28,
-        80
-      ],
-      "id": 847738,
-      "original_language": "en",
-      "original_title": "Fast Vengeance",
-      "overview": "Upon hearing of his brother’s death, a man named Shen returns to his old stomping grounds to find the men responsible and take justice into his own hands. He learns that a biker named Cobra and his ferocious gang, The Midnight Squad, were the ones responsible …",
-      "popularity": 3.241,
-      "poster_path": "/3EFF6BCZkM8az2OVEzgVHmkXPZ8.jpg",
-      "release_date": "2021-07-04",
-      "title": "Fast Vengeance",
-      "video": false,
-      "vote_average": 0,
-      "vote_count": 0
-    },
-    {
-      "adult": false,
-      "backdrop_path": "/cvybPlcv87ZqLpBi1OaartRka6.jpg",
+      "backdrop_path": "/8GZ1vAs5tRwhDZTEXWkNdtZvquM.jpg",
       "genre_ids": [
         28,
         12,
         14,
-        27
+        878
       ],
-      "id": 12685,
+      "id": 849,
       "original_language": "en",
-      "original_title": "BloodRayne: The Third Reich",
-      "overview": "Rayne fights against the Nazis in Europe during World War II, encountering Ekart Brand, a Nazi leader whose target is to inject Adolf Hitler with Rayne's blood in an attempt to transform him into a dhampir and attain immortality.",
-      "popularity": 7.116,
-      "poster_path": "/kS48eBvmVXtNJGXWW5QMQmm1JbO.jpg",
-      "release_date": "2010-11-05",
-      "title": "BloodRayne: The Third Reich",
+      "original_title": "Krull",
+      "overview": "A prince and a fellowship of companions set out to rescue his bride from a fortress of alien invaders who have arrived on their home planet.",
+      "popularity": 12.087,
+      "poster_path": "/b1anwwbh00R3iOgM88L5jf7qHBt.jpg",
+      "release_date": "1983-07-29",
+      "title": "Krull",
       "video": false,
-      "vote_average": 4,
-      "vote_count": 135
+      "vote_average": 6,
+      "vote_count": 348
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/iF2UbAQeXiZHwcBwaiDPRwNeILo.jpg",
+      "genre_ids": [
+        28,
+        80,
+        53
+      ],
+      "id": 9874,
+      "original_language": "en",
+      "original_title": "Cobra",
+      "overview": "A tough-on-crime street cop must protect the only surviving witness to a strange murderous cult with far reaching plans.",
+      "popularity": 28.571,
+      "poster_path": "/jCxfbTh8JvJil5edhNywxaTHoWv.jpg",
+      "release_date": "1986-03-21",
+      "title": "Cobra",
+      "video": false,
+      "vote_average": 6,
+      "vote_count": 1183
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/54wHxhTK915xuHqeuIhThzHflQT.jpg",
+      "genre_ids": [
+        28,
+        12,
+        14
+      ],
+      "id": 527990,
+      "original_language": "no",
+      "original_title": "Ragnarok",
+      "overview": "The short film Ragnarok takes on the story of Liv and Livtrase, the last two humans that survives Ragnarok, the end of the world in Norse mythology. Why they survive and the sacrifices made.",
+      "popularity": 1.991,
+      "poster_path": "/82yci18F8ebf3rnPXoI32azsa1D.jpg",
+      "release_date": "2018-01-31",
+      "title": "Ragnarok",
+      "video": false,
+      "vote_average": 8.7,
+      "vote_count": 3
     }
   ]
 }

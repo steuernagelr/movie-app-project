@@ -7,6 +7,8 @@ const mForm = document.querySelector(".movieForm");
 console.log(mForm);
 mForm.addEventListener("submit", fetchGenre);
 
+fetchMyMovieList()
+
 function fetchGenre(e) {
   e.preventDefault();
   const genreURL =
@@ -85,7 +87,7 @@ function renderMovie(movie) {
   const movieContainer = document.querySelector(".movie-container");
 
   const saveBttn = document.createElement("button");
-  saveBttn.textContent = "save";
+  saveBttn.textContent = "save to my list";
   saveBttn.addEventListener("click", (e) => saveMovie(e, movie));
 
   movieCard.append(movieTitle, moviePoster, movieDesc);
@@ -93,7 +95,7 @@ function renderMovie(movie) {
   movieContainer.append(saveBttn, movieCard);
 }
 
-function renderMyListMovie(movie) {
+function renderMyMovieList(movie) {
   
   const movieCard = document.createElement("div");
   movieCard.className = "movie-card";
@@ -116,20 +118,30 @@ function renderMyListMovie(movie) {
   moviePoster.className = "movie-poster";
 
   const movieList = document.querySelector(".movieList");
+  const movieListH2 = document.createElement("h2")
+  movieListH2.textContent = "My Movies"
+
+  const reviewButton = document.createElement("button")
+  reviewButton.textContent = "Add a review"
+
+  const deleteButton = document.createElement("button")
+  deleteButton.textContent = "Delete"
+
+  const movieCardContainer = document.createElement("cardContainer")
+  movieCardContainer.append(movieCard, reviewButton, deleteButton)
   movieCard.append(movieTitle, moviePoster);
-  movieList.append(movieCard);
+  movieList.prepend(movieCardContainer);
   mcontainer = document.querySelector(".movie-container")
   mcontainer.innerHTML = ""
   console.log(mcontainer)
 }
-
 
 function saveMovie(e, movie) {
 
   e.preventDefault()
   console.log(movie)
 
-    renderMyListMovie(movie)
+    renderMyMovieList(movie)
 
     fetch("http://localhost:3000/movieList", {
       method: "POST",
@@ -141,13 +153,11 @@ function saveMovie(e, movie) {
   
 }
 
-fetchmyMovieList()
-
-function fetchmyMovieList() {
+function fetchMyMovieList() {
  
   fetch("http://localhost:3000/movieList")
     .then((resp) => resp.json())
-    .then(o => o.forEach(renderMyListMovie));
+    .then(o => o.forEach(renderMyMovieList));
 }
 // function saveMovie(e, movieCard) {
 //   const movieContainer = document.querySelector(".movie-container");
