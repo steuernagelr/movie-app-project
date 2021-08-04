@@ -75,6 +75,9 @@ function renderMovie(movie) {
   const moviePoster = document.createElement("img");
   const basePosterURL = "https://image.tmdb.org/t/p/w400";
 
+  const movieDesc = document.createElement("p")
+  movieDesc.textContent = movie.overview
+
   moviePoster.src = basePosterURL + movie.poster_path;
   // const imgURL = moviePoster.src;
   moviePoster.className = "movie-poster";
@@ -83,18 +86,15 @@ function renderMovie(movie) {
 
   const saveBttn = document.createElement("button");
   saveBttn.textContent = "save";
-  saveBttn.addEventListener("click", (e) => saveMovie(e, movieCard));
+  saveBttn.addEventListener("click", (e) => saveMovie(e, movie));
 
-  movieCard.append(movieTitle, moviePoster);
+  movieCard.append(movieTitle, moviePoster, movieDesc);
   movieContainer.innerHTML = " ";
   movieContainer.append(saveBttn, movieCard);
-  // movieObj = {movie.results[movieIndex]}
-  // console.log(movieObj)
 }
 
 function renderMyListMovie(movie) {
- 
-  console.log(movie)
+  
   const movieCard = document.createElement("div");
   movieCard.className = "movie-card";
   if (movieCard.classList.contains("fade-in")) {
@@ -116,13 +116,11 @@ function renderMyListMovie(movie) {
   moviePoster.className = "movie-poster";
 
   const movieList = document.querySelector(".movieList");
-
-  const saveBttn = document.createElement("button");
-  saveBttn.textContent = "save";
-  saveBttn.addEventListener("click", (e) => saveMovie(e, movie));
-
   movieCard.append(movieTitle, moviePoster);
-  movieList.append(saveBttn, movieCard);
+  movieList.append(movieCard);
+  mcontainer = document.querySelector(".movie-container")
+  mcontainer.innerHTML = ""
+  console.log(mcontainer)
 }
 
 
@@ -131,22 +129,27 @@ function saveMovie(e, movie) {
   e.preventDefault()
   console.log(movie)
 
-  const configObj = {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify(movie),
-  };
+    renderMyListMovie(movie)
 
-  fetch("http://localhost:3000/movieList", configObj) ///UPDATES, THEN RENDERS so it's PESSIMISTIC
-      .then((resp) => resp.json())
-      .then(renderMyListMovie);
-
-
+    fetch("http://localhost:3000/movieList", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(movie),
+    })
+  
 }
 
-// function saveMovie(e, movieCard, movieObj) {
+fetchmyMovieList()
+
+function fetchmyMovieList() {
+ 
+  fetch("http://localhost:3000/movieList")
+    .then((resp) => resp.json())
+    .then(o => o.forEach(renderMyListMovie));
+}
+// function saveMovie(e, movieCard) {
 //   const movieContainer = document.querySelector(".movie-container");
 //   movieContainer.innerHTML = " ";
 //   e.preventDefault();
