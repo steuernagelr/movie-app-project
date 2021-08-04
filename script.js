@@ -88,27 +88,76 @@ function renderMovie(movie) {
   movieCard.append(movieTitle, moviePoster);
   movieContainer.innerHTML = " ";
   movieContainer.append(saveBttn, movieCard);
-
   // movieObj = {movie.results[movieIndex]}
   // console.log(movieObj)
 }
 
-function createMovie() {
-  
-}
+function renderMyListMovie(movie) {
+ 
+  console.log(movie)
+  const movieCard = document.createElement("div");
+  movieCard.className = "movie-card";
+  if (movieCard.classList.contains("fade-in")) {
+    movieCard.classList.remove("fade-in");
+    movieCard.classList.add("fade-in");
+  } else {
+    movieCard.classList.add("fade-in");
+  }
 
-function saveMovie(e, movieCard, movieObj) {
-  const movieContainer = document.querySelector(".movie-container");
-  movieContainer.innerHTML = " ";
-  e.preventDefault();
+  const movieTitle = document.createElement("h2");
+  movieTitle.className = "movie-title";
+  movieTitle.textContent = movie.original_title;
+
+  const moviePoster = document.createElement("img");
+  const basePosterURL = "https://image.tmdb.org/t/p/w400";
+
+  moviePoster.src = basePosterURL + movie.poster_path;
+  // const imgURL = moviePoster.src;
+  moviePoster.className = "movie-poster";
+
   const movieList = document.querySelector(".movieList");
 
-  movieList.append(movieCard);
-  console.log(movieCard)
+  const saveBttn = document.createElement("button");
+  saveBttn.textContent = "save";
+  saveBttn.addEventListener("click", (e) => saveMovie(e, movie));
+
+  movieCard.append(movieTitle, moviePoster);
+  movieList.append(saveBttn, movieCard);
+}
+
+
+function saveMovie(e, movie) {
+
+  e.preventDefault()
+  console.log(movie)
+
+  const configObj = {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(movie),
+  };
+
+  fetch("http://localhost:3000/movieList", configObj) ///UPDATES, THEN RENDERS so it's PESSIMISTIC
+      .then((resp) => resp.json())
+      .then(renderMyListMovie);
+
+
+}
+
+// function saveMovie(e, movieCard, movieObj) {
+//   const movieContainer = document.querySelector(".movie-container");
+//   movieContainer.innerHTML = " ";
+//   e.preventDefault();
+//   const movieList = document.querySelector(".movieList");
+
+//   movieList.append(movieCard);
+//   console.log(movieCard)
 
 
   
-}
+// }
 
 const reviewForm = document.querySelector("#review-form");
 console.log(reviewForm);
