@@ -8,16 +8,15 @@
   <body>
     <div class ="flex-grid">
     <div class ="col">
-
         <form class="movieForm">
-          <h1>Choose a movie for me!</h1>
+          <h1>What are we watching?</h1>
           <label for="genres">Choose a genre</label>
           <select id="genres" name="genres">
             <option value="action">action</option>
             <option value="drama">drama</option>
             <option value="comedy">comedy</option>
             <option value="mystery">mystery</option>
-            <option value="science fiction">sci-fi</option>
+            <option value="family">for kids</option>
           </select>
           <input type="submit"></form>
         </div>
@@ -25,7 +24,10 @@
       <div class="col movie-container">
       </div>
 
-    <div class="col movieList">
+    <div class="col">
+    
+      <div class="movieList">
+    
       <form id="review-form">
         <input id='new_review' type='text' placeholder='Leave a movie review...'/>
         <br/>
@@ -38,6 +40,7 @@
         <p>Fast&Furious is a movie about FAMILY and nothing else.</p>
         <p>Inception was confusing, but I liked when they walked on the walls! 5 stars!</p>
       </div>
+
     </div>
   </div>
     <script src="script.js"></script> 
