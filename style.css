@@ -1,17 +1,16 @@
 .fade-in {
-  animation: fadeIn .5s;
+  animation: fadeIn .8s;
 }
 
 @keyframes fadeIn {
   0% {
     opacity: 0.1;
-    transform: scale(0.9, 0.9);
+    transform: scale(.9, 0.9);
   }
   100% {
     opacity: 1;
   }
 }
-
 
 .flex-grid{
   display: flex;
@@ -20,20 +19,30 @@
 }
 .flex-grid .col {
   flex: 1;
-  
+  align-items: center;
+  justify-content: center;
 }
 
 .movieList {
+
+  
   overflow: scroll;
-  height: 900px
+  height: 900px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 10px;
+
 }
 .movieList img {
   max-width: 45%;
   height:auto;
 
-
 }
-
+.cardContainer {
+  align-items: center;
+  justify-content: center;
+}
 
 @media screen and (max-width:500px) {
   .flex-grid {
@@ -86,62 +95,3 @@ body {
   padding: 20px;
 }
 
-
-
-
-/* .container {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: stretch;
-}
-
-.left {
-  margin-left: auto
-  order: 1;
-  background: red;
-  flex-basis: 100%;
-  height: 200px
-}
-
-.middle {
-  margin-left: auto
-  flex-wrap: wrap
-  order: 2;
-  background: green;
-  flex-basis: 100%;
-  height: 300px;
-}
-
-.right {
-  margin-left: auto
-  order: 3;
-  background: yellow;
-  flex-basis: 100%;
-  height: 300px;
-}
-
-@media screen and (min-width:600px) {
-  .container {
-    flex-wrap: nowrap;
-  }
-  .left {
-    justify-content: space-between
-    margin-left: auto
-    flex-basis: 200px;
-    order: 1;
-  }
-  .middle {
-    justify-content: space-between
-    margin-left: auto
-    flex-basis: 1;
-    order: 2;
-  }
-  .right {
-    justify-content: space-between
-    margin-left: auto
-    flex-basis: 200px;
-    order: 3;
-  }
-} */

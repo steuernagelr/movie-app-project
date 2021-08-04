@@ -13,8 +13,6 @@ function fetchGenre(e) {
   e.preventDefault();
   const genreURL =
     "https://api.themoviedb.org/3/genre/movie/list?api_key=30170f3751cc29da3d08369d25340c51";
-
-  console.log("works");
   fetch(genreURL)
     .then((resp) => resp.json())
     .then((genreObj) => genreLookup(genreObj.genres));
@@ -85,7 +83,6 @@ function renderMovie(movie) {
   moviePoster.className = "movie-poster";
 
   const movieContainer = document.querySelector(".movie-container");
-
   const saveBttn = document.createElement("button");
   saveBttn.textContent = "save to my list";
   saveBttn.addEventListener("click", (e) => saveMovie(e, movie));
@@ -127,10 +124,15 @@ function renderMyMovieList(movie) {
   const deleteButton = document.createElement("button")
   deleteButton.textContent = "Delete"
 
-  const movieCardContainer = document.createElement("cardContainer")
+  const movieCardContainer = document.createElement("div")
+  movieCardContainer.classList.add("card-container")
   movieCardContainer.append(movieCard, reviewButton, deleteButton)
   movieCard.append(movieTitle, moviePoster);
   movieList.prepend(movieCardContainer);
+  // const movieListh2 = document.createElement("h2")
+  // movieListh2.textContent = "My Movies"
+  // if (movieListh2.textcontent = "")
+  // movieList.prepend(movieListh2)
   mcontainer = document.querySelector(".movie-container")
   mcontainer.innerHTML = ""
   console.log(mcontainer)
@@ -142,7 +144,6 @@ function saveMovie(e, movie) {
   console.log(movie)
 
     renderMyMovieList(movie)
-
     fetch("http://localhost:3000/movieList", {
       method: "POST",
       headers: {
@@ -167,9 +168,6 @@ function fetchMyMovieList() {
 
 //   movieList.append(movieCard);
 //   console.log(movieCard)
-
-
-  
 // }
 
 const reviewForm = document.querySelector("#review-form");
