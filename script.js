@@ -123,6 +123,23 @@ function renderMyMovieList(movie) {
 
   const deleteButton = document.createElement("button")
   deleteButton.textContent = "Delete"
+  deleteButton.id = 'delete_movie'
+
+  deleteButton.addEventListener('click', () => {
+      movieCardContainer.remove()
+      deleteMovie(movie.id)
+})
+function deleteMovie(id){
+    fetch(`http://localhost:3000/movieList/${id}`,{
+        method:'DELETE',
+        headers: {
+            'Content-Type':'application/json'
+        }
+    })
+        .then(res => res.json())
+        .then(movie => console.log(movie))
+   }
+
 
   const movieCardContainer = document.createElement("div")
   movieCardContainer.classList.add("card-container")
@@ -159,6 +176,7 @@ function fetchMyMovieList() {
   fetch("http://localhost:3000/movieList")
     .then((resp) => resp.json())
     .then(o => o.forEach(renderMyMovieList));
+
 }
 // function saveMovie(e, movieCard) {
 //   const movieContainer = document.querySelector(".movie-container");
