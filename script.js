@@ -22,16 +22,12 @@ function genreLookup(genreTable) {
   const genreOpt = document.querySelector("#genres");
   const genreName = genreOpt.options[genreOpt.selectedIndex].value;
 
-  // console.log(genreTable[0].name)
-  // console.log(genreTable)
-  // console.log(genreName)
-
   const result = genreTable.filter(
     (genre) => genre.name.toLowerCase() === genreName
   );
-  const movieId = result[0].id;
+  const genreId = result[0].id;
 
-  fetchMovie(movieId);
+  fetchMovie(genreId);
 }
 
 function fetchMovie(genre) {
@@ -119,7 +115,9 @@ function renderMyMovieList(movie) {
   movieListH2.textContent = "My Movies"
 
   const reviewButton = document.createElement("button")
+  reviewButton.setAttribute('id', 'review-button');
   reviewButton.textContent = "Add a review"
+  // reviewButton.addEventListener(writeReview)
 
   const deleteButton = document.createElement("button")
   deleteButton.textContent = "Delete"
@@ -138,6 +136,11 @@ function renderMyMovieList(movie) {
   console.log(mcontainer)
 }
 
+// function writeReview() {
+
+  
+// }
+
 function saveMovie(e, movie) {
 
   e.preventDefault()
@@ -151,7 +154,6 @@ function saveMovie(e, movie) {
       },
       body: JSON.stringify(movie),
     })
-  
 }
 
 function fetchMyMovieList() {

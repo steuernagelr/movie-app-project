@@ -24,7 +24,6 @@
 }
 
 .movieList {
-
   
   overflow: scroll;
   height: 900px;
@@ -39,6 +38,11 @@
   height:auto;
 
 }
+
+.movieList a img:hover {
+  position:absolute;
+  top:0px;
+}
 .cardContainer {
   align-items: center;
   justify-content: center;
@@ -51,42 +55,11 @@
       width: 100%;
       margin: 0 0 10px 0;
     }
-  }
 }
-/* 
-
-  @media screen and (min-width:600px) {
-    .container {
-      flex-wrap: nowrap;
-    }
-    .left {
-      justify-content: space-between
-      margin-left: auto
-      flex-basis: 200px;
-      order: 1;
-    }
-    .middle {
-      justify-content: space-between
-      margin-left: auto
-      flex-basis: 1;
-      order: 2;
-    }
-    .right {
-      justify-content: space-between
-      margin-left: auto
-      flex-basis: 200px;
-      order: 3;
-    }
-  } */ 
-
-
-
 * {
   box-sizing: border-box;
 }
-body {
-  padding: 20px;
-}
+
 .flex-grid { 
   margin: 0 0 20px 0;
 }
@@ -94,4 +67,5 @@ body {
   background: white;
   padding: 20px;
 }
+
 
