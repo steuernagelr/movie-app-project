@@ -41,15 +41,24 @@ function fetchMovie(genre) {
   let requestURL = `${URL}${genre}&page=${pageNo}`;
   fetch(requestURL)
     .then((resp) => resp.json())
-    .then(renderMovie);
+    .then(randomize);
   // console.log(requestURL)
   console.log(genre);
+}
+
+function randomize(movies) {
+  console.log(movies)
+  const movieIndex = Math.floor(Math.random() * 21);
+  console.log(movieIndex)
+  const movie = movies.results[movieIndex]
+  // console.log(movie.results)
+  renderMovie(movie)
 }
 
 function renderMovie(movie) {
   // console.log(movie);
   // console.log(movie.results[0].original_title)
-
+  console.log(movie)
   const movieCard = document.createElement("div");
   movieCard.className = "movie-card";
   if (movieCard.classList.contains("fade-in")) {
@@ -61,41 +70,49 @@ function renderMovie(movie) {
 
   const movieTitle = document.createElement("h2");
   movieTitle.className = "movie-title";
-
-  const movieIndex = Math.floor(Math.random() * 21);
-  movieTitle.innerText = movie.results[movieIndex].original_title;
+  movieTitle.textContent = movie.original_title;
 
   const moviePoster = document.createElement("img");
   const basePosterURL = "https://image.tmdb.org/t/p/w400";
-  moviePoster.src = basePosterURL + movie.results[movieIndex].poster_path;
-  const imgURL = moviePoster.src;
+
+  moviePoster.src = basePosterURL + movie.poster_path;
+  // const imgURL = moviePoster.src;
   moviePoster.className = "movie-poster";
 
   const movieContainer = document.querySelector(".movie-container");
 
   const saveBttn = document.createElement("button");
   saveBttn.textContent = "save";
-  saveBttn.addEventListener("click", (e) => saveMovie(e, movieCard, imgURL));
+  saveBttn.addEventListener("click", (e) => saveMovie(e, movieCard));
 
   movieCard.append(movieTitle, moviePoster);
   movieContainer.innerHTML = " ";
   movieContainer.append(saveBttn, movieCard);
+
+  // movieObj = {movie.results[movieIndex]}
+  // console.log(movieObj)
 }
 
-function saveMovie(e, movieCard) {
+function createMovie() {
+  
+}
+
+function saveMovie(e, movieCard, movieObj) {
   const movieContainer = document.querySelector(".movie-container");
   movieContainer.innerHTML = " ";
   e.preventDefault();
   const movieList = document.querySelector(".movieList");
-  // const savedImg = document.createElement("img")
-  // savedImg.src = imgURL
-  // savedImg.className = "img-size"
-  // console.log(savedImg)
+
   movieList.append(movieCard);
+  console.log(movieCard)
+
+
+  
 }
 
 const reviewForm = document.querySelector("#review-form");
 console.log(reviewForm);
+
 reviewForm.addEventListener("submit", (e) => {
   e.preventDefault();
   handleReview(e.target.new_review.value);

@@ -16,14 +16,21 @@
 .flex-grid{
   display: flex;
   justify-content: space-between;
+  
 }
 .flex-grid .col {
   flex: 1;
+  
 }
 
+.movieList {
+  overflow: scroll;
+  height: 900px
+}
 .movieList img {
-  max-width: 50%;
+  max-width: 45%;
   height:auto;
+
 
 }
 
