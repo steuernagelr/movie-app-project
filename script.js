@@ -176,6 +176,7 @@ function fetchMyMovieList() {
   fetch("http://localhost:3000/movieList")
     .then((resp) => resp.json())
     .then(o => o.forEach(renderMyMovieList));
+
 }
 // function saveMovie(e, movieCard) {
 //   const movieContainer = document.querySelector(".movie-container");
