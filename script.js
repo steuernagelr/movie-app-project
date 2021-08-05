@@ -50,7 +50,8 @@ function fetchMovie(genre) {
 
 function randomize(movies) {
   console.log(movies);
-  const movieIndex = Math.floor(Math.random() * 20);
+  const movieIndex = Math.floor(Math.random() * movies.results.length);
+  console.log(movies.results.length)
   console.log(movieIndex);
   const movie = movies.results[movieIndex];
   // console.log(movie.results)
@@ -97,6 +98,8 @@ function renderMovie(movie) {
 function renderMyMovieList(movie) {
   const movieCard = document.createElement("div");
   movieCard.className = "movie-card";
+  movieCard.id = movie.id
+
   if (movieCard.classList.contains("fade-in")) {
     movieCard.classList.remove("fade-in");
     movieCard.classList.add("fade-in");
@@ -124,8 +127,8 @@ function renderMyMovieList(movie) {
   reviewButton.classList.add("openBttn");
   // reviewButton.id = "openBttn"
   reviewButton.id = movie.id;
-  movieId = movie.id;
-  reviewButton.addEventListener("click", (e) =>  openTheForm(e, movieId));
+
+  reviewButton.addEventListener("click", (e) =>  openTheForm(e, movieCard.id));
 
   const deleteButton = document.createElement("button");
   deleteButton.textContent = "Delete";
@@ -186,21 +189,21 @@ function fetchMyMovieList() {
 //   reviewForm.reset();
 // });
 
-function openTheForm(e, movieId) {
-  console.log(movieId)
+function openTheForm(e) {
+  console.log(e.target.id)
   document.getElementById("popupForm").style.display = "block";
 
   fetch('http://localhost:3000/movieList/').then(resp => resp.json()).then(console.log)
 
-  grabForm();
+  grabForm(e.target.id);
 }
 
-function grabForm() {
+function grabForm(movieCardId) {
   const reviewForm = document.querySelector(".formContainer");
   console.log(".formContainer");
   reviewForm.addEventListener("submit", (e) => {
     e.preventDefault();
-    handleReview(e.target.new_review.value);
+    handleReview(e.target.new_review.value, movieCardId);
     reviewForm.reset();
     closeTheForm()
   });
@@ -210,12 +213,19 @@ function grabForm() {
 
 }
   
-function handleReview(review) {
-  const reviewLeft = document.createElement("p");
-  reviewLeft.id = "review"
-  reviewLeft.textContent = review;
-  document.querySelector(".movie-card").appendChild(reviewLeft);
+function handleReview(review, movieCardId) {
+  const userReview = document.createElement("p");
+  userReview.id = "review"
+  userReview.textContent = review;
 
+  const reviewBox = document.getElementById(`${movieCardId}`)
+  console.log (reviewBox)
+
+  // userReview.setAttribute('id', movieCardId)
+  const userReviewId = document.getElementById(`${movieCardId}`)
+  // console.log(userReviewId)
+  userReviewId.append(userReview);
+  // console.log (`${movieCardId} this is the movie card`)
 }
 
 function closeTheForm() {
