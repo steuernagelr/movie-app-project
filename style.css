@@ -1,3 +1,20 @@
+
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: #f5f7f7;
+  padding: 20px;
+}
+.flex-grid { 
+  margin: 0 0 20px 0;
+}
+.col {
+ 
+  padding: 20px;
+}
+
+
 .fade-in {
   animation: fadeIn .8s;
 }
@@ -24,7 +41,6 @@
 }
 
 .movieList {
-
   
   overflow: scroll;
   height: 900px;
@@ -39,6 +55,8 @@
   height:auto;
 
 }
+
+
 .cardContainer {
   align-items: center;
   justify-content: center;
@@ -51,7 +69,7 @@
       width: 100%;
       margin: 0 0 10px 0;
     }
-  }
+}
 }
 /* 
 
@@ -79,19 +97,4 @@
     }
   } */ 
 
-
-
-* {
-  box-sizing: border-box;
-}
-body {
-  padding: 20px;
-}
-.flex-grid { 
-  margin: 0 0 20px 0;
-}
-.col {
-  background: white;
-  padding: 20px;
-}
 

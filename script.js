@@ -1,7 +1,8 @@
 // genre list https://api.themoviedb.org/3/genre/movie/list?api_key=30170f3751cc29da3d08369d25340c51&language=en-US
 //api key api_key=30170f3751cc29da3d08369d25340c51
 const URL =
-  "https://api.themoviedb.org/3/discover/movie?api_key=30170f3751cc29da3d08369d25340c51&language=en-US&with_genres=";
+  // "https://api.themoviedb.org/3/discover/movie?api_key=30170f3751cc29da3d08369d25340c51&language=en-US&region=US&with_genres=";
+  "https://api.themoviedb.org/3/discover/movie?api_key=30170f3751cc29da3d08369d25340c51&language=en-US&with_original_language=en&region=US&include_adult=false&include_video=false&with_genres="
 
 const mForm = document.querySelector(".movieForm");
 console.log(mForm);
@@ -35,20 +36,21 @@ function genreLookup(genreTable) {
 }
 
 function fetchMovie(genre) {
-  const pageNo = Math.floor(Math.random() * 501) + 1;
+  const pageNo = Math.floor(Math.random() * 500) + 1;
   // console.log(genre);
   // console.log(pageNo);
   let requestURL = `${URL}${genre}&page=${pageNo}`;
+  console.log(requestURL)
   fetch(requestURL)
     .then((resp) => resp.json())
     .then(randomize);
   // console.log(requestURL)
-  console.log(genre);
+  //total_pages
 }
 
 function randomize(movies) {
   console.log(movies)
-  const movieIndex = Math.floor(Math.random() * 21);
+  const movieIndex = Math.floor(Math.random() * 20);
   console.log(movieIndex)
   const movie = movies.results[movieIndex]
   // console.log(movie.results)
@@ -129,6 +131,7 @@ function renderMyMovieList(movie) {
       movieCardContainer.remove()
       deleteMovie(movie.id)
 })
+
 function deleteMovie(id){
     fetch(`http://localhost:3000/movieList/${id}`,{
         method:'DELETE',
@@ -178,15 +181,6 @@ function fetchMyMovieList() {
     .then(o => o.forEach(renderMyMovieList));
 
 }
-// function saveMovie(e, movieCard) {
-//   const movieContainer = document.querySelector(".movie-container");
-//   movieContainer.innerHTML = " ";
-//   e.preventDefault();
-//   const movieList = document.querySelector(".movieList");
-
-//   movieList.append(movieCard);
-//   console.log(movieCard)
-// }
 
 const reviewForm = document.querySelector("#review-form");
 console.log(reviewForm);
