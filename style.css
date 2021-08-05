@@ -86,7 +86,7 @@ body {
   cursor: pointer;
   position: fixed;
 }
-.loginPopup {
+.popup {
   position: relative;
   text-align: center;
   width: 100%;

@@ -122,9 +122,10 @@ function renderMyMovieList(movie) {
   const reviewButton = document.createElement("button");
   reviewButton.textContent = "Add a review";
   reviewButton.classList.add("openBttn");
-  reviewButton.id = "openBttn";
-
-  reviewButton.addEventListener("click", openTheForm);
+  // reviewButton.id = "openBttn"
+  reviewButton.id = movie.id;
+  movieId = movie.id;
+  reviewButton.addEventListener("click", (e) =>  openTheForm(e, movieId));
 
   const deleteButton = document.createElement("button");
   deleteButton.textContent = "Delete";
@@ -165,6 +166,7 @@ function saveMovie(e, movie) {
   console.log(movie);
 
   renderMyMovieList(movie);
+
   fetch("http://localhost:3000/movieList", {
     method: "POST",
     headers: {
@@ -184,10 +186,12 @@ function fetchMyMovieList() {
 //   reviewForm.reset();
 // });
 
-
-
-function openTheForm() {
+function openTheForm(e, movieId) {
+  console.log(movieId)
   document.getElementById("popupForm").style.display = "block";
+
+  fetch('http://localhost:3000/movieList/').then(resp => resp.json()).then(console.log)
+
   grabForm();
 }
 
@@ -206,12 +210,12 @@ function grabForm() {
 
 }
   
- 
 function handleReview(review) {
   const reviewLeft = document.createElement("p");
   reviewLeft.id = "review"
   reviewLeft.textContent = review;
   document.querySelector(".movie-card").appendChild(reviewLeft);
+
 }
 
 function closeTheForm() {

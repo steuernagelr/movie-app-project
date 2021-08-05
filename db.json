@@ -2,25 +2,42 @@
   "movieList": [
     {
       "adult": false,
-      "backdrop_path": "/kIM8AxfrZ5CXCqySvBn4dFJWaBZ.jpg",
+      "backdrop_path": "/1YsTBmhbeoHkHQtSWaHzdHILiJW.jpg",
       "genre_ids": [
-        12,
         28,
-        53,
-        9648,
-        10770
+        14,
+        27,
+        878
       ],
-      "id": 116981,
+      "id": 3490,
       "original_language": "en",
-      "original_title": "Hands of a Murderer",
-      "overview": "Sherlock Holme must track down his nemesis Professor Moriarty after the villain kidnaps Holme's brother Mycroft. The evil doctor is forcing his captive to decode highly classified military documents.",
-      "popularity": 1.646,
-      "poster_path": "/zs8v3Z6wfJE2bq8CKSFdxBtUX6U.jpg",
-      "release_date": "1990-05-16",
-      "title": "Hands of a Murderer",
+      "original_title": "Drums of Fu Manchu",
+      "overview": "The nefarious Dr. Fu Manchu searches for the keys to the tomb of Genghis Khan, in order to fulfill a prophecy that will enable him to conquer the world. His nemesis, Dr. Nayland Smith, and his associates fight to keep the evil doctor from getting his hands on the keys. In 1943, the serial that was edited together into a feature movie also called Drums of Fu Manchu.",
+      "popularity": 1.208,
+      "poster_path": "/pnMf4PJLL2cySY1QzXy4eabov4W.jpg",
+      "release_date": "1940-03-15",
+      "title": "Drums of Fu Manchu",
       "video": false,
-      "vote_average": 7.2,
-      "vote_count": 6
+      "vote_average": 5.8,
+      "vote_count": 3
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/aZeOKKcFl2g48ioDk4wZrY6rwpZ.jpg",
+      "genre_ids": [
+        35
+      ],
+      "id": 75090,
+      "original_language": "en",
+      "original_title": "Beware the Gonzo",
+      "overview": "Eddie \"Gonzo\" Gilman is starting a revolution. When the wild-eyed rebel journalist is ousted from his prep school's newspaper by its über-popular editor, Eddie fronts an underground movement to give a voice to all the misfits, outcasts, and nerds. Soon the power of the press is in Eddie's hands... but will he use it wisely?",
+      "popularity": 2.058,
+      "poster_path": "/8HBvgkYWRtEtaKiqWeRaFEBFYqj.jpg",
+      "release_date": "2010-04-22",
+      "title": "Beware the Gonzo",
+      "video": false,
+      "vote_average": 6.2,
+      "vote_count": 19
     }
   ]
 }
