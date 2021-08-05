@@ -1,7 +1,7 @@
-// genre list https://api.themoviedb.org/3/genre/movie/list?api_key=30170f3751cc29da3d08369d25340c51&language=en-US
-//api key api_key=30170f3751cc29da3d08369d25340c51
+genre list https://api.themoviedb.org/3/genre/movie/list?api_key=30170f3751cc29da3d08369d25340c51&language=en-US
+api key api_key=30170f3751cc29da3d08369d25340c51
 const URL =
-  "https://api.themoviedb.org/3/discover/movie?api_key=30170f3751cc29da3d08369d25340c51&language=en-US&with_genres=";
+ "https://api.themoviedb.org/3/discover/movie?api_key=30170f3751cc29da3d08369d25340c51&language=en-US&with_genres=";
 
 const mForm = document.querySelector(".movieForm");
 console.log(mForm);
@@ -10,7 +10,7 @@ mForm.addEventListener("submit", fetchGenre);
 fetchMyMovieList()
 
 function fetchGenre(e) {
-  e.preventDefault();
+ e.preventDefault();
   const genreURL =
     "https://api.themoviedb.org/3/genre/movie/list?api_key=30170f3751cc29da3d08369d25340c51";
   fetch(genreURL)
@@ -146,10 +146,10 @@ function deleteMovie(id){
   movieCardContainer.append(movieCard, reviewButton, deleteButton)
   movieCard.append(movieTitle, moviePoster);
   movieList.prepend(movieCardContainer);
-  // const movieListh2 = document.createElement("h2")
-  // movieListh2.textContent = "My Movies"
-  // if (movieListh2.textcontent = "")
-  // movieList.prepend(movieListh2)
+  const movieListh2 = document.createElement("h2")
+  movieListh2.textContent = "My Movies"
+  if (movieListh2.textcontent = "")
+  movieList.prepend(movieListh2)
   mcontainer = document.querySelector(".movie-container")
   mcontainer.innerHTML = ""
   console.log(mcontainer)
@@ -177,15 +177,15 @@ function fetchMyMovieList() {
     .then((resp) => resp.json())
     .then(o => o.forEach(renderMyMovieList));
 }
-// function saveMovie(e, movieCard) {
-//   const movieContainer = document.querySelector(".movie-container");
-//   movieContainer.innerHTML = " ";
-//   e.preventDefault();
-//   const movieList = document.querySelector(".movieList");
+function saveMovie(e, movieCard) {
+  const movieContainer = document.querySelector(".movie-container");
+  movieContainer.innerHTML = " ";
+  e.preventDefault();
+  const movieList = document.querySelector(".movieList");
 
-//   movieList.append(movieCard);
-//   console.log(movieCard)
-// }
+  movieList.append(movieCard);
+  console.log(movieCard)
+}
 
 const reviewForm = document.querySelector("#review-form");
 console.log(reviewForm);
@@ -197,7 +197,7 @@ reviewForm.addEventListener("submit", (e) => {
 });
 
 function handleReview(review) {
-  const reviewLeft = document.createElement("p");
-  reviewLeft.textContent = review;
-  document.querySelector("#review-container").appendChild(reviewLeft);
+ const reviewLeft = document.createElement("p");
+ reviewLeft.textContent = review;
+ document.querySelector("#review-container").appendChild(reviewLeft);
 }

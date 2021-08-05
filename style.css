@@ -1,4 +1,4 @@
-.fade-in {
+ .fade-in {
     animation: fadeIn .8s;
   }
   
@@ -53,7 +53,7 @@
       }
     }
   }
-  /* 
+  
     @media screen and (min-width:600px) {
       .container {
         flex-wrap: nowrap;
@@ -76,15 +76,15 @@
         flex-basis: 200px;
         order: 3;
       }
-    } */ 
+    } 
   
   
-  
+/*   
   * {
     box-sizing: border-box;
   }
   body {
-    padding: 20px;
+    padding: 20px;    
   }
   .flex-grid { 
     margin: 0 0 20px 0;
@@ -92,4 +92,9 @@
   .col {
     background: white;
     padding: 20px;
-  }
+  } */ 
+
+  
+
+
+  
