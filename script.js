@@ -36,15 +36,16 @@ function genreLookup(genreTable) {
 }
 
 function fetchMovie(genre) {
-  const pageNo = Math.floor(Math.random() * 501) + 1;
+  const pageNo = Math.floor(Math.random() * 500) + 1;
   // console.log(genre);
   // console.log(pageNo);
   let requestURL = `${URL}${genre}&page=${pageNo}`;
+  console.log(requestURL)
   fetch(requestURL)
     .then((resp) => resp.json())
     .then(randomize);
   // console.log(requestURL)
-  console.log(genre);
+  //total_pages
 }
 
 function randomize(movies) {
