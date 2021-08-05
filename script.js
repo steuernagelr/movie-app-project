@@ -8,7 +8,7 @@ const mForm = document.querySelector(".movieForm");
 console.log(mForm);
 mForm.addEventListener("submit", fetchGenre);
 
-fetchMyMovieList();
+// fetchMyMovieList();
 
 function fetchGenre(e) {
   e.preventDefault();
@@ -62,6 +62,7 @@ function renderMovie(movie) {
   // console.log(movie);
   // console.log(movie.results[0].original_title)
   console.log(movie);
+
   const movieCard = document.createElement("div");
   movieCard.className = "movie-card";
   if (movieCard.classList.contains("fade-in")) {
@@ -86,6 +87,7 @@ function renderMovie(movie) {
   moviePoster.className = "movie-poster";
 
   const movieContainer = document.querySelector(".movie-container");
+
   const saveBttn = document.createElement("button");
   saveBttn.textContent = "save to my list";
   saveBttn.addEventListener("click", (e) => saveMovie(e, movie));
@@ -127,7 +129,6 @@ function renderMyMovieList(movie) {
   reviewButton.classList.add("openBttn");
   // reviewButton.id = "openBttn"
   reviewButton.id = movie.id;
-
   reviewButton.addEventListener("click", (e) =>  openTheForm(e, movieCard.id));
 
   const deleteButton = document.createElement("button");
@@ -161,12 +162,12 @@ function renderMyMovieList(movie) {
   // movieList.prepend(movieListh2)
   mcontainer = document.querySelector(".movie-container");
   mcontainer.innerHTML = "";
-  console.log(mcontainer);
+  // console.log(mcontainer);
 }
 
 function saveMovie(e, movie) {
   e.preventDefault();
-  console.log(movie);
+  // console.log(movie);
 
   renderMyMovieList(movie);
 
@@ -193,17 +194,18 @@ function openTheForm(e) {
   console.log(e.target.id)
   document.getElementById("popupForm").style.display = "block";
 
-  fetch('http://localhost:3000/movieList/').then(resp => resp.json()).then(console.log)
+  // fetch('http://localhost:3000/movieList/').then(resp => resp.json()).then(console.log)
 
-  grabForm(e.target.id);
+  grabForm(e.target);
 }
 
-function grabForm(movieCardId) {
+function grabForm(movieBttn) {
   const reviewForm = document.querySelector(".formContainer");
-  console.log(".formContainer");
+  // console.log(".formContainer");
   reviewForm.addEventListener("submit", (e) => {
     e.preventDefault();
-    handleReview(e.target.new_review.value, movieCardId);
+    
+    handleReview(e.target.new_review.value, movieBttn);
     reviewForm.reset();
     closeTheForm()
   });
@@ -213,19 +215,18 @@ function grabForm(movieCardId) {
 
 }
   
-function handleReview(review, movieCardId) {
+function handleReview(review, movieBttn) {
   const userReview = document.createElement("p");
   userReview.id = "review"
   userReview.textContent = review;
-
-  const reviewBox = document.getElementById(`${movieCardId}`)
-  console.log (reviewBox)
-
   // userReview.setAttribute('id', movieCardId)
-  const userReviewId = document.getElementById(`${movieCardId}`)
-  // console.log(userReviewId)
+
+  const userReviewId =movieBttn.parentElement.querySelector(".movie-card")
+
+  console.log(userReviewId)
   userReviewId.append(userReview);
-  // console.log (`${movieCardId} this is the movie card`)
+  // console.log (`${movieCardId}`)
+  console.log('works')
 }
 
 function closeTheForm() {
