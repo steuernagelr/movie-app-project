@@ -1,23 +1,8 @@
 {
   "movieList": [
     {
-      "adult": false,
-      "backdrop_path": "/q5pFTRpZch5qjg7u0IZw6R2Plj3.jpg",
-      "genre_ids": [
-        28,
-        53
-      ],
-      "id": 17167,
-      "original_language": "en",
-      "original_title": "Juncture",
-      "overview": "When Anna Carter is diagnosed with a terminal illness, she sees her final three months as an opportunity to enact some vigilante justice. Racing her deteriorating health and trying to stay one step ahead of the police, Carter furiously tracks down vicious criminals whom she feels unjustly eluded jail time.",
-      "popularity": 1.653,
-      "poster_path": "/9kHCjArHEHgchAsU48wxwfeVgvg.jpg",
-      "release_date": "2007-10-06",
-      "title": "Juncture",
-      "video": false,
-      "vote_average": 5.4,
-      "vote_count": 8
+      
+
     }
   ]
 }

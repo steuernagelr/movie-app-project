@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head> 
@@ -8,37 +9,50 @@
     <div class ="flex-grid">
     <div class ="col">
         <form class="movieForm">
-          <h1>What are we watching?</h1>
+          <h1>Random movie generator</h1>
           <label for="genres">Choose a genre</label>
           <select id="genres" name="genres">
             <option value="action">action</option>
             <option value="drama">drama</option>
             <option value="comedy">comedy</option>
-            <option value="mystery">mystery</option>
-            <option value="family">for kids</option>
+            <option value="romance">romance</option>
+            <option value="thriller">thriller</option>
+            <option value="animation">animation</option>
+        
           </select>
-          <input type="submit"></form>
+          <input type="submit" value="generate movie"></form>
         </div>
 
       <div class="col movie-container">
+        
       </div>
 
     <div class="col">
     
       <div class="movieList">
-    
-      <form id="review-form">
+        <div class="popup">
+          <div class="formPopup" id="popupForm">
+            <form class="formContainer">
+              <h2>Write a review</h2>
+              <input id='new_review' type='text' placeholder='Leave a movie review...'/> <br/>
+              <button type="submit" class="btn">Submit review</button>
+              <button type="button" class="btn cancel">Close</button>
+            </form>
+          </div>
+        </div>
+<!-- 
+    <div id="review-form-container">
+      <form id="review-form" id="popupForm">
         <input id='new_review' type='text' placeholder='Leave a movie review...'/>
         <br/>
-        <input id='submit-button'
-        type='submit'
-        value='submit'/>
+        <input id='submit-button' type='submit' value='submit'/>
+        <input type="button" name="cancel" value="Cancel">
       </form>
-  
+    </div>
       <div id='review-container'>
         <p>Fast&Furious is a movie about FAMILY and nothing else.</p>
         <p>Inception was confusing, but I liked when they walked on the walls! 5 stars!</p>
-      </div>
+      </div> -->
 
     </div>
   </div>

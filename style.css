@@ -1,100 +1,165 @@
- .fade-in {
-    animation: fadeIn .8s;
+
+
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: #f5f7f7;
+  padding: 20px;
+}
+.flex-grid { 
+  margin: 0 0 20px 0;
+}
+.col {
+ 
+  padding: 20px;
+}
+
+
+.fade-in {
+  animation: fadeIn .8s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0.1;
+    transform: scale(.9, 0.9);
   }
+  100% {
+    opacity: 1;
+  }
+}
+
+.flex-grid{
+  display: flex;
+  justify-content: space-between;
   
-  @keyframes fadeIn {
-    0% {
-      opacity: 0.1;
-      transform: scale(.9, 0.9);
+}
+.flex-grid .col {
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+}
+
+.movieList {
+  
+  overflow: scroll;
+  height: 900px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 10px;
+
+}
+.movieList img {
+  max-width: 45%;
+  height:auto;
+
+}
+
+
+.cardContainer {
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width:500px) {
+  .flex-grid {
+    display: block;
+    .col {
+      width: 100%;
+      margin: 0 0 10px 0;
     }
-    100% {
-      opacity: 1;
+
+}
+}
+
+/* making the popup form */
+.openBtn {
+  display: flex;
+  justify-content: left;
+}
+.openButton {
+  border: none;
+  border-radius: 5px;
+  background-color: #1c87c9;
+  color: white;
+  padding: 14px 20px;
+  cursor: pointer;
+  position: fixed;
+}
+.popup {
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+.formPopup {
+  display: none;
+  position: fixed;
+  left: 45%;
+  top: 5%;
+  transform: translate(-50%, 5%);
+  border: 3px solid #999999;
+  z-index: 9;
+}
+.formContainer {
+  max-width: 300px;
+  padding: 20px;
+  background-color: #fff;
+}
+.formContainer input[type=text],
+.formContainer input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 20px 0;
+  border: none;
+  background: #eee;
+}
+.formContainer input[type=text]:focus,
+.formContainer input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+.formContainer .btn {
+  padding: 12px 20px;
+  border: none;
+  background-color: #8ebf42;
+  color: #fff;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 15px;
+  opacity: 0.8;
+}
+.formContainer .cancel {
+  background-color: #cc0000;
+}
+.formContainer .btn:hover,
+.openButton:hover {
+  opacity: 1;
+/* 
+
+  @media screen and (min-width:600px) {
+    .container {
+      flex-wrap: nowrap;
     }
-  }
-  
-  .flex-grid{
-    display: flex;
-    justify-content: space-between;
-    
-  }
-  .flex-grid .col {
-    flex: 1;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .movieList {
-  
-    
-    overflow: scroll;
-    height: 900px;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    font-size: 10px;
-  
-  }
-  .movieList img {
-    max-width: 45%;
-    height:auto;
-  
-  }
-  .cardContainer {
-    align-items: center;
-    justify-content: center;
-  }
-  
-  @media screen and (max-width:500px) {
-    .flex-grid {
-      display: block;
-      .col {
-        width: 100%;
-        margin: 0 0 10px 0;
-      }
+    .left {
+      justify-content: space-between
+      margin-left: auto
+      flex-basis: 200px;
+      order: 1;
     }
-  }
-  
-    @media screen and (min-width:600px) {
-      .container {
-        flex-wrap: nowrap;
-      }
-      .left {
-        justify-content: space-between
-        margin-left: auto
-        flex-basis: 200px;
-        order: 1;
-      }
-      .middle {
-        justify-content: space-between
-        margin-left: auto
-        flex-basis: 1;
-        order: 2;
-      }
-      .right {
-        justify-content: space-between
-        margin-left: auto
-        flex-basis: 200px;
-        order: 3;
-      }
-    } 
-  
-  
-/*   
-  * {
-    box-sizing: border-box;
-  }
-  body {
-    padding: 20px;    
-  }
-  .flex-grid { 
-    margin: 0 0 20px 0;
-  }
-  .col {
-    background: white;
-    padding: 20px;
+    .middle {
+      justify-content: space-between
+      margin-left: auto
+      flex-basis: 1;
+      order: 2;
+    }
+    .right {
+      justify-content: space-between
+      margin-left: auto
+      flex-basis: 200px;
+      order: 3;
+    }
   } */ 
 
-  
 
-
-  
