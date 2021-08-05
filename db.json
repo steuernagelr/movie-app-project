@@ -1,5 +1,217 @@
 {
   "movieList": [
-
+    {
+      "adult": false,
+      "backdrop_path": null,
+      "genre_ids": [
+        28
+      ],
+      "id": 66740,
+      "original_language": "cn",
+      "original_title": "紫雨風暴",
+      "overview": "Khmer Rouge terrorist Kieron Chow and his unit arrive in Hong Kong for their latest mission. Todd, Chow's son and fiercely loyal right-hand man, sustains a serious head wound. Now a total amnesiac, Todd wakes from a coma to find he's been given a new life, one that may be the death of him. With the help of psychiatrist Shirley Kwan, anti-terrorist officer Mark Chan tries to convince Todd that he is actually an undercover cop sent to infiltrate Chow's group. As fragments of his shattered memory return, Todd is forced to choose between his dark past and this one shot at redemption",
+      "popularity": 1.902,
+      "poster_path": "/8T7gmAmPKcg8i299f5eA9UKbPx.jpg",
+      "release_date": "1999-11-25",
+      "title": "Purple Storm",
+      "video": false,
+      "vote_average": 5.5,
+      "vote_count": 4
+    },
+    {
+      "adult": false,
+      "backdrop_path": null,
+      "genre_ids": [
+        28,
+        14,
+        12,
+        10751
+      ],
+      "id": 493529,
+      "original_language": "en",
+      "original_title": "Dungeons & Dragons",
+      "overview": "Based on the popular dice board game and live-action remake to the 80s cartoon of the same name, where a group of misfit teens get teleported to a fantasy realm.",
+      "popularity": 2.145,
+      "poster_path": "/6o5m3UQBnHt4gYYnCrT8hTH9j1C.jpg",
+      "release_date": "2023-03-01",
+      "title": "Dungeons & Dragons",
+      "video": false,
+      "vote_average": 0,
+      "vote_count": 0
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/9cFKMfNrxkX3oZR25vxnw74lprk.jpg",
+      "genre_ids": [
+        28,
+        18,
+        36
+      ],
+      "id": 69879,
+      "original_language": "en",
+      "original_title": "Pompeii: The Last Day",
+      "overview": "In 79 AD, one of the infamous natural disasters in human history occurred when Mount Vesuvius erupted. With speculative dramatizations of various inhabitants' final hours along with detailed documentation of the known facts concerning the eruption, the horrific day is vividly brought to life.",
+      "popularity": 2.771,
+      "poster_path": "/ulhMKKpiGEfbZG8Qi4xES1MHAF.jpg",
+      "release_date": "2003-10-20",
+      "title": "Pompeii: The Last Day",
+      "video": false,
+      "vote_average": 6.5,
+      "vote_count": 22
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/xRKwiUHGnsZGxZaO6OIKqpzJjPa.jpg",
+      "genre_ids": [
+        28,
+        53
+      ],
+      "id": 466622,
+      "original_language": "en",
+      "original_title": "The Rhythm Section",
+      "overview": "Blake Lively stars as Stephanie Patrick, a woman on a path of self-destruction after her family is tragically killed in a plane crash. When she discovers the wreck was no accident, Stephanie enters the dark, complex world of international espionage seeking vengeance. Her search leads to Iain Boyd (Jude Law), a former MI6 agent who trains her to hunt down those responsible. With nothing left to lose, Stephanie transforms from victim to assassin and discovers that neither revenge nor the truth are what they appear in this action-packed thriller from the producers of James Bond.",
+      "popularity": 85.756,
+      "poster_path": "/spTr0VYyRtl36Lkk6nCnnbFXhus.jpg",
+      "release_date": "2020-01-31",
+      "title": "The Rhythm Section",
+      "video": false,
+      "vote_average": 5.6,
+      "vote_count": 391
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/36jz1KIW2xPHh0TR7nIX6sM9VBr.jpg",
+      "genre_ids": [
+        878,
+        28
+      ],
+      "id": 487620,
+      "original_language": "en",
+      "original_title": "Kill Order",
+      "overview": "A troubled high school student discovers the truth behind his hidden abilities.",
+      "popularity": 3.002,
+      "poster_path": "/7GsmOsf7M7jUhrav17l3Vx2ekIR.jpg",
+      "release_date": "2017-11-06",
+      "title": "Kill Order",
+      "video": false,
+      "vote_average": 5.4,
+      "vote_count": 32
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/7VJ3a1Fbv6nSdc3bs8DZv71FaQX.jpg",
+      "genre_ids": [
+        28,
+        18
+      ],
+      "id": 551809,
+      "original_language": "en",
+      "original_title": "Born Racer",
+      "overview": "A powerful and inspirational story of dedication, danger, fear, and the rare ‘will’ some of us have to defy all personal limitations.  Experience the fastest motorsport on earth through the eyes of five-time champion Scott Dixon and the Chip Ganassi Racing team. Filmed with an access all areas lens, ‘Born Racer’ follows the people who are passionate about the world of auto racing and asks why some individuals feel compelled to face danger and risk their lives in order to win.  Both action-packed and highly-intimate, it features an intense blend of up close and personal filming with never-before-seen spectacular, cutting-edge racing footage to explore a sport that defines the very people who inhabit it, and pushes them to the edge in their desire for success.",
+      "popularity": 2.165,
+      "poster_path": "/qbhHJPs2BhrFcT2gwXo77d9UA6R.jpg",
+      "release_date": "2018-10-02",
+      "title": "Born Racer",
+      "video": false,
+      "vote_average": 7.7,
+      "vote_count": 9
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/n2kJpUFSW2NRQNHd3UuDOXbalp6.jpg",
+      "genre_ids": [
+        28,
+        35,
+        80,
+        18
+      ],
+      "id": 11160,
+      "original_language": "it",
+      "original_title": "Piedone d'Egitto",
+      "overview": "Inspector Rizzo and Marshal Caputo go to Egypt and look for Professor Cerullo, who is missing.",
+      "popularity": 6.758,
+      "poster_path": "/l9VmGrrat8vcCHf90Ajws6BexF8.jpg",
+      "release_date": "1980-03-01",
+      "title": "Flatfoot in Egypt",
+      "video": false,
+      "vote_average": 6.3,
+      "vote_count": 94
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/ud8TqQAfzXQyPq11bGOaBPt7M8V.jpg",
+      "genre_ids": [
+        28,
+        35
+      ],
+      "id": 2334,
+      "original_language": "fr",
+      "original_title": "Taxi 3",
+      "overview": "A gang of thieves calling themselves the Santa Claus Gang are wreaking havoc, and the police can't keep up. Police Captain Gilbert is distracted by a Chinese reporter writing a story on his squad, and taxi driver Daniel is in the midst of a relationship crisis. After a string of mistakes in which the thieves outsmart the police time and time again, Daniel and his super-taxi pitch in.",
+      "popularity": 12.628,
+      "poster_path": "/6Yk3O5mNIYpIKIKaB2l4TJBDdlS.jpg",
+      "release_date": "2003-01-29",
+      "title": "Taxi 3",
+      "video": false,
+      "vote_average": 5.6,
+      "vote_count": 1078
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/7uluvpT4FAY4dRgaTOXxtcVh6NZ.jpg",
+      "genre_ids": [
+        28
+      ],
+      "id": 87774,
+      "original_language": "en",
+      "original_title": "Bucktown",
+      "overview": "Duke Johnson visits a small Southern town, intent on burying his brother. After the funeral, he learns that he must stay for 60 days, for the estate to be processed. A few locals convince Duke to reopen his late brother's nightclub, and soon the local redneck policemen are intimidating Duke with threats of violence. Duke refuses to pay the bribes they demand, so then he and his lady friend Aretha are threatened and attacked by the crooked cops. Rather than take them on himself, Duke calls on his old pal Roy. Roy brings a few buddies to Bucktown, and they bring justice to the small town. With the redneck cops out of the way, Duke lets his guard down. Then the situation gets out of hand again. Finally, Duke must settle the score himself.",
+      "popularity": 2.507,
+      "poster_path": "/dxVvmtMEojy7lo60WKNe1Cv5DJ4.jpg",
+      "release_date": "1975-07-02",
+      "title": "Bucktown",
+      "video": false,
+      "vote_average": 6.1,
+      "vote_count": 15
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/dY6oEH886dRIpZU3baj4FJfSHdw.jpg",
+      "genre_ids": [
+        28,
+        37
+      ],
+      "id": 104974,
+      "original_language": "en",
+      "original_title": "Captain Apache",
+      "overview": "An Indian discovers plans to assassinate the president when he was investigating another murder.",
+      "popularity": 2.753,
+      "poster_path": "/mM0rqezymWLghVuhDxZA1Jzjqfk.jpg",
+      "release_date": "1971-10-27",
+      "title": "Captain Apache",
+      "video": false,
+      "vote_average": 4.4,
+      "vote_count": 15
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/kcvKEvTWqIGMjpVJdbDVRHdIt4C.jpg",
+      "genre_ids": [
+        28,
+        53,
+        12
+      ],
+      "id": 370172,
+      "original_language": "en",
+      "original_title": "No Time to Die",
+      "overview": "Bond has left active service and is enjoying a tranquil life in Jamaica. His peace is short-lived when his old friend Felix Leiter from the CIA turns up asking for help. The mission to rescue a kidnapped scientist turns out to be far more treacherous than expected, leading Bond onto the trail of a mysterious villain armed with dangerous new technology.",
+      "popularity": 49.713,
+      "poster_path": "/w0oZEHvERujPV5JdsSp1r6rO7sl.jpg",
+      "release_date": "2021-10-08",
+      "title": "No Time to Die",
+      "video": false,
+      "vote_average": 0,
+      "vote_count": 0
+    }
   ]
 }

@@ -1,7 +1,8 @@
 // genre list https://api.themoviedb.org/3/genre/movie/list?api_key=30170f3751cc29da3d08369d25340c51&language=en-US
 //api key api_key=30170f3751cc29da3d08369d25340c51
 const URL =
-  "https://api.themoviedb.org/3/discover/movie?api_key=30170f3751cc29da3d08369d25340c51&language=en-US&with_genres=";
+  // "https://api.themoviedb.org/3/discover/movie?api_key=30170f3751cc29da3d08369d25340c51&language=en-US&region=US&with_genres=";
+  "https://api.themoviedb.org/3/discover/movie?api_key=30170f3751cc29da3d08369d25340c51&language=en-US&with_original_language=en&region=US&include_adult=false&include_video=false&with_genres="
 
 const mForm = document.querySelector(".movieForm");
 console.log(mForm);
@@ -48,7 +49,7 @@ function fetchMovie(genre) {
 
 function randomize(movies) {
   console.log(movies)
-  const movieIndex = Math.floor(Math.random() * 21);
+  const movieIndex = Math.floor(Math.random() * 20);
   console.log(movieIndex)
   const movie = movies.results[movieIndex]
   // console.log(movie.results)
@@ -129,16 +130,7 @@ function renderMyMovieList(movie) {
       movieCardContainer.remove()
       deleteMovie(movie.id)
 })
-function deleteMovie(id){
-    fetch(`http://localhost:3000/movieList/${id}`,{
-        method:'DELETE',
-        headers: {
-            'Content-Type':'application/json'
-        }
-    })
-        .then(res => res.json())
-        .then(movie => console.log(movie))
-   }
+
 
 
   const movieCardContainer = document.createElement("div")
