@@ -132,6 +132,16 @@ function renderMyMovieList(movie) {
       deleteMovie(movie.id)
 })
 
+function deleteMovie(id){
+    fetch(`http://localhost:3000/movieList/${id}`,{
+        method:'DELETE',
+        headers: {
+            'Content-Type':'application/json'
+        }
+    })
+        .then(res => res.json())
+        .then(movie => console.log(movie))
+   }
 
 
   const movieCardContainer = document.createElement("div")
@@ -171,15 +181,6 @@ function fetchMyMovieList() {
     .then(o => o.forEach(renderMyMovieList));
 
 }
-// function saveMovie(e, movieCard) {
-//   const movieContainer = document.querySelector(".movie-container");
-//   movieContainer.innerHTML = " ";
-//   e.preventDefault();
-//   const movieList = document.querySelector(".movieList");
-
-//   movieList.append(movieCard);
-//   console.log(movieCard)
-// }
 
 const reviewForm = document.querySelector("#review-form");
 console.log(reviewForm);
