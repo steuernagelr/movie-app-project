@@ -80,6 +80,83 @@
       "video": false,
       "vote_average": 6.6,
       "vote_count": 2542
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/hG63ijNO9pdcX1P6D3sw5eSmzP5.jpg",
+      "genre_ids": [
+        28,
+        14
+      ],
+      "id": 659254,
+      "original_language": "en",
+      "original_title": "Broken Swords: The Last In Line",
+      "overview": "Twelve seasoned men and women are on the run. If anyone can survive this, they will or they will die trying. And many will indeed die before the night bleeds away into morning light.",
+      "popularity": 1.198,
+      "poster_path": "/h32P5u7q0Dnre3Vt6QKnfcS9zxw.jpg",
+      "release_date": "2018-11-17",
+      "title": "Broken Swords: The Last In Line",
+      "video": false,
+      "vote_average": 1,
+      "vote_count": 1
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/miNsHqbe8BJP7bLDjggMhAv0bM8.jpg",
+      "genre_ids": [
+        28,
+        878,
+        12
+      ],
+      "id": 443297,
+      "original_language": "en",
+      "original_title": "Moontrap: Target Earth",
+      "overview": "A long forgotten ancient spacecraft discovered on Earth. Investigations carried out by Scout transport her to the moon whereupon she meets the impressive machines preserving the wisdom of that long lost civilization.",
+      "popularity": 26.134,
+      "poster_path": "/cqMH1aIvOUjeF9S0fog0zdntHtH.jpg",
+      "release_date": "2017-02-07",
+      "title": "Moontrap: Target Earth",
+      "video": false,
+      "vote_average": 4.7,
+      "vote_count": 47
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/ty55XR0OW99xhdZLxwmpgwRPgog.jpg",
+      "genre_ids": [
+        28
+      ],
+      "id": 52314,
+      "original_language": "en",
+      "original_title": "Chain of Command",
+      "overview": "When Merrill Ross (Michael Dudikoff) is thought to be a C.I.A. agent gone bad and teaming with some other alphabet named agency to take over the oil rich country of Qumir, he finds he's in the middle of a very explosive situation. Not knowing who he can trust, he's forced to use a process of elimination thru the chain of operatives he encounters.",
+      "popularity": 1.707,
+      "poster_path": "/9quC0dvbzTgSJps67M7U7DE7oyF.jpg",
+      "release_date": "1994-01-01",
+      "title": "Chain of Command",
+      "video": false,
+      "vote_average": 4.7,
+      "vote_count": 15
+    },
+    {
+      "adult": false,
+      "backdrop_path": null,
+      "genre_ids": [
+        28,
+        878,
+        53
+      ],
+      "id": 53979,
+      "original_language": "en",
+      "original_title": "Karate Cop",
+      "overview": "John Travis is the last honest cop in a future dominated by terroristic martial-arts gangs who fight gladiator-style in arenas.",
+      "popularity": 2.739,
+      "poster_path": "/AvcHzrpbnSYea4ESdSZJXEJq6e4.jpg",
+      "release_date": "1991-09-14",
+      "title": "Karate Cop",
+      "video": false,
+      "vote_average": 4.1,
+      "vote_count": 8
     }
   ]
 }

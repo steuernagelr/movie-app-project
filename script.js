@@ -16,7 +16,8 @@ function fetchGenre(e) {
     "https://api.themoviedb.org/3/genre/movie/list?api_key=30170f3751cc29da3d08369d25340c51";
   fetch(genreURL)
     .then((resp) => resp.json())
-    .then((genreObj) => genreLookup(genreObj.genres)).catch((err) => alert("Something went wrong, please refresh!"));
+    .then((genreObj) => genreLookup(genreObj.genres))
+    .catch((err) => alert("Something went wrong, please refresh!"));
 }
 
 function genreLookup(genreTable) {
@@ -43,7 +44,8 @@ function fetchMovie(genre) {
   console.log(requestURL);
   fetch(requestURL)
     .then((resp) => resp.json())
-    .then(randomize).catch((err) => alert("Something went wrong, please refresh!"));
+    .then(randomize)
+    .catch((err) => alert("Something went wrong, please refresh!"));
   // console.log(requestURL)
   //total_pages
 }
@@ -51,7 +53,7 @@ function fetchMovie(genre) {
 function randomize(movies) {
   console.log(movies);
   const movieIndex = Math.floor(Math.random() * movies.results.length);
-  console.log(movies.results.length)
+  console.log(movies.results.length);
   console.log(movieIndex);
   const movie = movies.results[movieIndex];
   // console.log(movie.results)
@@ -59,11 +61,9 @@ function randomize(movies) {
 }
 
 function renderMovie(movie) {
-  
-
   const movieCard = document.createElement("div");
   movieCard.className = "movie-card";
-  movieCard.id = "middle"
+  movieCard.id = "middle";
   if (movieCard.classList.contains("fade-in")) {
     movieCard.classList.remove("fade-in");
     movieCard.classList.add("fade-in");
@@ -80,16 +80,16 @@ function renderMovie(movie) {
 
   const movieDesc = document.createElement("p");
   movieDesc.textContent = movie.overview;
-  movieDesc.id = ""
+  movieDesc.id = "";
   const movieDescBox = document.createElement("div");
-  movieDescBox.id = "movie-desc-box"
-  movieDescBox.append(movieDesc)
+  movieDescBox.id = "movie-desc-box";
+  movieDescBox.append(movieDesc);
 
   moviePoster.src = basePosterURL + movie.poster_path;
-  
+
   const imgURL = moviePoster.src;
   moviePoster.className = "movie-poster";
-  moviePoster.id = "large"
+  moviePoster.id = "large";
 
   const movieContainer = document.querySelector(".movie-container");
 
@@ -97,22 +97,23 @@ function renderMovie(movie) {
   saveBttn.textContent = "save to my list";
   saveBttn.addEventListener("click", (e) => saveMovie(e, movie));
 
-  movieCard.append(movieTitle, moviePoster, saveBttn, movieDescBox) ;
+  movieCard.append(movieTitle, moviePoster, saveBttn, movieDescBox);
   movieContainer.innerHTML = " ";
   movieContainer.append(movieCard);
 
-  changeBG(imgURL)
-  
+  changeBG(imgURL);
 }
 
-function changeBG(moviePoster){
-  document.querySelector('.background').style.backgroundImage = `linear-gradient(to bottom, crimson, transparent), url(${moviePoster})`
+function changeBG(moviePoster) {
+  document.querySelector(
+    ".background"
+  ).style.backgroundImage = `linear-gradient(to bottom, crimson, transparent), url(${moviePoster})`;
 }
 
 function renderMyMovieList(movie) {
   const movieCard = document.createElement("div");
   movieCard.className = "movie-card";
-  movieCard.id = movie.id
+  movieCard.id = movie.id;
 
   if (movieCard.classList.contains("fade-in")) {
     movieCard.classList.remove("fade-in");
@@ -141,7 +142,7 @@ function renderMyMovieList(movie) {
   reviewButton.classList.add("openBttn");
   // reviewButton.id = "openBttn"
   // reviewButton.id = movie.id;
-  reviewButton.addEventListener("click", (e) =>  openTheForm(e, movieCard.id));
+  reviewButton.addEventListener("click", (e) => openTheForm(e, movieCard.id));
 
   const deleteButton = document.createElement("button");
   deleteButton.textContent = "Delete";
@@ -203,11 +204,11 @@ function fetchMyMovieList() {
 // });
 
 function openTheForm(e) {
-  console.log(e.target.id)
+  console.log(e.target.id);
   document.getElementById("popupForm").style.display = "block";
 
   // fetch('http://localhost:3000/movieList/').then(resp => resp.json()).then(console.log)
-console.log("works")
+  console.log("works");
 
   grabForm(e.target);
 }
@@ -217,34 +218,32 @@ function grabForm(movieBttn) {
   // console.log(".formContainer");
   reviewForm.addEventListener("submit", (e) => {
     e.preventDefault();
-    
+
     handleReview(e.target.new_review.value, movieBttn);
     reviewForm.reset();
-    closeTheForm()
+    closeTheForm();
   });
 
-  const cancelBtn = document.querySelector(".cancel")
-  cancelBtn.addEventListener("click", closeTheForm)
-
+  const cancelBtn = document.querySelector(".cancel");
+  cancelBtn.addEventListener("click", closeTheForm);
 }
-  
+
 function handleReview(review, movieBttn) {
   const userReview = document.createElement("p");
-  userReview.id = "review"
+  userReview.id = "review";
   userReview.textContent = review;
   // userReview.setAttribute('id', movieCardId)
 
-  console.log("LOOK HERE")
+  console.log("LOOK HERE");
 
-  const userReviewId =movieBttn.parentElement.querySelector(".movie-card")
+  const userReviewId = movieBttn.parentElement.querySelector(".movie-card");
 
-  console.log(userReviewId)
+  console.log(userReviewId);
   userReviewId.append(userReview);
   // console.log (`${movieCardId}`)
-  console.log('works')
+  console.log("works");
 }
 
 function closeTheForm() {
   document.getElementById("popupForm").style.display = "none";
 }
-

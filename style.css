@@ -5,19 +5,23 @@
 }
 
 body {
+
+
   image-rendering: auto;
   image-rendering: smooth;
   backdrop-filter: blur(3px);
 
   image-rendering: -webkit-optimize-contrast;
-  background: center fixed; 
+  background: center center fixed; 
   background-image: linear-gradient(crimson, #f7f7f7);
   -webkit-background-size: cover;
   -moz-background-size: cover;
+  
   -o-background-size: cover;
   background-size: cover;
   padding: 20px;
-  font-family:  'Roboto', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  position: relative;
 }
 
 select {
@@ -83,6 +87,12 @@ input {
   background-color: #2B2B2B;
 
 }
+.left {
+  
+  align-items: center;
+  margin-top: 10%;
+  margin-left: 10%;
+}
 
 #middle button {
   font-size: 15px;
@@ -109,7 +119,7 @@ button:hover {
 }
 
 .movie-container {
-
+  overflow: scroll;
   text-align: center;
  
 }
@@ -117,16 +127,11 @@ button:hover {
 #movie-desc-box{
 
   background-color: #2B2B2B;
-  margin: 50px 40px;
+  margin: 30px 20px;
 }
 
-  #middle {
-
-    flex-direction: column;
-  }
 #middle h2 {
   text-indent: 25px;
- 
   text-align: center;
   font-size: large;
   margin-left: auto;
@@ -145,6 +150,10 @@ letter-spacing: 3px;
   margin-right: auto;
 padding: 15px;
 }
+.movie-card {
+
+  overflow: scroll;
+}
 .movie-card #large {
   border : solid 2px rgba(255,255,255, 0.4);
   border-radius: .1em;
@@ -158,7 +167,7 @@ max-width: 90%;
 
 h1 {
   font-family: 'Elsie Swash Caps', cursive, sans-serif;
-  font-size: 60px; 
+  font-size: 48px; 
   font-weight: bold; 
   color:#1B1212;
   text-shadow: -5px 3px 1px rgba(255,255,255,0.21);
@@ -166,7 +175,7 @@ h1 {
   
 }
 h2 {
-  backdrop-filter: blur(3px)
+  backdrop-filter: blur(3px);
   font-family: 'Roboto', sans-serif;
 
 }
@@ -179,13 +188,6 @@ h2 {
 
 .col {
   padding: 10px;
-}
-
-.left {
-  
-  align-items: center;
-  margin-top: 10%;
-  margin-left: 10%;
 }
 
 
@@ -215,12 +217,14 @@ h2 {
   justify-content: start;
 }
 
-.movieList {
-  display: flex;
-  flex-direction: column;
+ .movieList {
+   margin-top: 20%;
   overflow: scroll;
+  position:relative;
+  height: 40%;
 
-  align-items: center;
+  margin-left: 50%;
+
   justify-content: center;
   text-align: center;
   font-size: 10px;
@@ -228,15 +232,12 @@ h2 {
 }
 
 .movieList img {
-  display: flex
-  height:auto;
-  max-width: 30%;
-  height: auto;
+  max-width: 30%
 
 }
 
-
 .cardContainer {
+  
   align-items: center;
   justify-content: center;
 }
