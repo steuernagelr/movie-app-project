@@ -16,7 +16,7 @@ function fetchGenre(e) {
     "https://api.themoviedb.org/3/genre/movie/list?api_key=30170f3751cc29da3d08369d25340c51";
   fetch(genreURL)
     .then((resp) => resp.json())
-    .then((genreObj) => genreLookup(genreObj.genres));
+    .then((genreObj) => genreLookup(genreObj.genres)).catch((err) => alert("Something went wrong, please refresh!"));
 }
 
 function genreLookup(genreTable) {
@@ -43,7 +43,7 @@ function fetchMovie(genre) {
   console.log(requestURL);
   fetch(requestURL)
     .then((resp) => resp.json())
-    .then(randomize);
+    .then(randomize).catch((err) => alert("Something went wrong, please refresh!"));
   // console.log(requestURL)
   //total_pages
 }
@@ -63,6 +63,7 @@ function renderMovie(movie) {
 
   const movieCard = document.createElement("div");
   movieCard.className = "movie-card";
+  movieCard.id = "middle"
   if (movieCard.classList.contains("fade-in")) {
     movieCard.classList.remove("fade-in");
     movieCard.classList.add("fade-in");
@@ -79,6 +80,10 @@ function renderMovie(movie) {
 
   const movieDesc = document.createElement("p");
   movieDesc.textContent = movie.overview;
+  movieDesc.id = ""
+  const movieDescBox = document.createElement("div");
+  movieDescBox.id = "movie-desc-box"
+  movieDescBox.append(movieDesc)
 
   moviePoster.src = basePosterURL + movie.poster_path;
   
@@ -92,9 +97,9 @@ function renderMovie(movie) {
   saveBttn.textContent = "save to my list";
   saveBttn.addEventListener("click", (e) => saveMovie(e, movie));
 
-  movieCard.append(movieTitle, moviePoster, movieDesc);
+  movieCard.append(movieTitle, moviePoster, saveBttn, movieDescBox) ;
   movieContainer.innerHTML = " ";
-  movieContainer.append(saveBttn, movieCard);
+  movieContainer.append(movieCard);
 
   changeBG(imgURL)
   

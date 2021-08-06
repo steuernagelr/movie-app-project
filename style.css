@@ -6,15 +6,16 @@
 
 body {
   image-rendering: auto;
-  image-rendering: crisp-edges;
+  image-rendering: smooth;
+  backdrop-filter: blur(3px);
 
   image-rendering: -webkit-optimize-contrast;
-  background: center center fixed; 
-  background-color: darkcyan;
+  background: center fixed; 
+  background-image: linear-gradient(crimson, #f7f7f7);
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  
+  background-size: cover;
   padding: 20px;
   font-family:  'Roboto', sans-serif;
 }
@@ -57,64 +58,143 @@ input:hover {
 
   min-width: 15ch;
   max-width: 30ch;
-  border: 1px solid var(--select-border);
+  border: 0px solid var(--select-border);
   border-radius: .2em;
   padding: 0.25em 0.5em;
   font-size: 1.25rem;
   cursor: pointer;
   line-height: 1.1;
-  background-color:  #555555;
-  color: #f5f7f7
+  background-color:  #29C7AC;
+  color: #1B1212;
 }
+
 
 input {
   width: 50%;
   min-width: 15ch;
   max-width: 30ch;
-  border: 1px solid var(--select-border);
+  border: 0px solid var(--select-border);
   border-radius: .2em;
   padding: 0.25em 0.5em;
   font-size: 1.25rem;
   cursor: pointer;
   line-height: 1.1;
-  background-color: #fff;
+  color: white;
+  background-color: #2B2B2B;
 
+}
+
+#middle button {
+  font-size: 15px;
+}
+
+button {
+  background-color: #555555;
+  border: 2px solid grey;
+  border: none;
+  color: white;
+  margin-left:10px;
+padding: 5px;
+border-radius: 4px;
+
+  font-size: 10px;
+  transition-duration: 0.4s;
+}
+
+
+
+button:hover {
+  background-color: #29C7AC;
+
+}
+
+.movie-container {
+
+  text-align: center;
+ 
+}
+
+#movie-desc-box{
+
+  background-color: #2B2B2B;
+  margin: 50px 40px;
+}
+
+  #middle {
+
+    flex-direction: column;
+  }
+#middle h2 {
+  text-indent: 25px;
+ 
+  text-align: center;
+  font-size: large;
+  margin-left: auto;
+  margin-right: auto;
+padding: 5px;
+letter-spacing: 3px;
+}
+#middle p {
+  font-family: 'Lato', sans-serif;
+  line-height: 1.6;
+  text-indent: 10px;
+ color: white;
+  text-align: left;
+  font-size: small;
+  margin-left: auto;
+  margin-right: auto;
+padding: 15px;
+}
+.movie-card #large {
+  border : solid 2px rgba(255,255,255, 0.4);
+  border-radius: .1em;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+max-width: 90%;
 }
 
 
 
 h1 {
   font-family: 'Elsie Swash Caps', cursive, sans-serif;
+  font-size: 60px; 
+  font-weight: bold; 
+  color:#1B1212;
+  text-shadow: -5px 3px 1px rgba(255,255,255,0.21);
+  backdrop-filter: blur(3px)
+  
 }
 h2 {
+  backdrop-filter: blur(3px)
   font-family: 'Roboto', sans-serif;
 
 }
 
 
-
-
 .flex-grid { 
-  margin: 0 0 20px 0;
+  margin: 0 0 50px 0;
   
 }
 
 .col {
- 
-  padding: 20px;
+  padding: 10px;
 }
+
+.left {
+  
+  align-items: center;
+  margin-top: 10%;
+  margin-left: 10%;
+}
+
 
 
 .fade-in {
   animation: fadeIn .8s;
 }
 
-.movie-card #large {
 
-  border: 5px solid #fff;
-  border-radius: .2em;
-  max-width: 85%;
-}
 @keyframes fadeIn {
   0% {
     opacity: 0.1;
@@ -127,19 +207,19 @@ h2 {
 
 .flex-grid{
   display: flex;
-  justify-content: space-between;
+  justify-content: start;
   
 }
 .flex-grid .col {
   flex: 1;
-  align-items: center;
-  justify-content: center;
+  justify-content: start;
 }
 
 .movieList {
-  
+  display: flex;
+  flex-direction: column;
   overflow: scroll;
-  height: 900px;
+
   align-items: center;
   justify-content: center;
   text-align: center;
@@ -148,8 +228,10 @@ h2 {
 }
 
 .movieList img {
-  max-width: 45%;
+  display: flex
   height:auto;
+  max-width: 30%;
+  height: auto;
 
 }
 
@@ -170,19 +252,7 @@ h2 {
 }
 
 /* making the popup form */
-.openBtn {
-  display: flex;
-  justify-content: left;
-}
-.openButton {
-  border: none;
-  border-radius: 5px;
-  background-color: #1c87c9;
-  color: white;
-  padding: 14px 20px;
-  cursor: pointer;
-  position: fixed;
-}
+
 .popup {
   position: relative;
   text-align: center;
@@ -197,6 +267,7 @@ h2 {
   border: 3px solid #999999;
   z-index: 9;
 }
+
 .formContainer {
   max-width: 300px;
   padding: 20px;
@@ -214,33 +285,8 @@ h2 {
   opacity: 0.8;
 }
 .formContainer .cancel {
-  background-color: #cc0000;
+  background-color: #C02739;
 }
 .formContainer .btn:hover,
 .openButton:hover {
   opacity: 1;
-/* 
-
-  @media screen and (min-width:600px) {
-    .container {
-      flex-wrap: nowrap;
-    }
-    .left {
-      justify-content: space-between
-      margin-left: auto
-      flex-basis: 200px;
-      order: 1;
-    }
-    .middle {
-      justify-content: space-between
-      margin-left: auto
-      flex-basis: 1;
-      order: 2;
-    }
-    .right {
-      justify-content: space-between
-      margin-left: auto
-      flex-basis: 200px;
-      order: 3;
-    }
-  } */ 
