@@ -3,24 +3,35 @@
 <html lang="en">
   <head> 
     <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Elsie+Swash+Caps:wght@900&family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    
     <title>Movie App</title>
   </head>
-  <body>
+  <body class="background">
+
     <div class ="flex-grid">
-    <div class ="col">
+
+        <div class ="col left">
         <form class="movieForm">
           <h1>Random movie generator</h1>
           <label for="genres">Choose a genre</label>
+          
+         
+        <div class="select" >
           <select id="genres" name="genres">
+      
             <option value="action">action</option>
             <option value="drama">drama</option>
             <option value="comedy">comedy</option>
             <option value="romance">romance</option>
             <option value="thriller">thriller</option>
             <option value="animation">animation</option>
-        
           </select>
+        </div>
+          <br><br>
           <input type="submit" value="generate movie"></form>
+        
         </div>
 
       <div class="col movie-container">
@@ -55,8 +66,11 @@
       </div> -->
 
     </div>
-  </div>
+ 
+</div>
     <script src="script.js"></script> 
 
 </body>
+
+<footer></footer>
 </html> 
