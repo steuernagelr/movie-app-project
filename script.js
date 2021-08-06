@@ -1,5 +1,5 @@
-genre list https://api.themoviedb.org/3/genre/movie/list?api_key=30170f3751cc29da3d08369d25340c51&language=en-US
-api key api_key=30170f3751cc29da3d08369d25340c51
+//genre list https://api.themoviedb.org/3/genre/movie/list?api_key=30170f3751cc29da3d08369d25340c51&language=en-US
+//api key api_key=30170f3751cc29da3d08369d25340c51
 const URL =
 
   // "https://api.themoviedb.org/3/discover/movie?api_key=30170f3751cc29da3d08369d25340c51&language=en-US&region=US&with_genres=";
