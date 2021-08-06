@@ -15,7 +15,7 @@ body {
 
   image-rendering: -webkit-optimize-contrast;
   background: center center fixed; 
-  background-image: linear-gradient(crimson, #f7f7f7);
+  background-image: linear-gradient(crimson, coral);
   -webkit-background-size: cover;
   -moz-background-size: cover;
   
@@ -24,10 +24,25 @@ body {
   padding: 20px;
   font-family: 'Roboto', sans-serif;
   position: relative;
+  color:white
 }
 
 select {
-  background-color: transparent;
+  
+    font-family: six caps;
+    text-transform: uppercase;
+    background: #FF3743;
+    background-size: 100%;
+    color: white;
+    letter-spacing: .2em;
+    font-size: 6rem;
+    text-shadow: .07em .07em 0 #FF3743, .1em .1em 0 white;
+    font-size: inherit;
+    cursor: inherit;
+    line-height: inherit;
+    
+  }
+  /* background-color: transparent;
   border: none;
   padding: 0 1em 0 0;
   margin: 0;
@@ -37,23 +52,27 @@ select {
   cursor: inherit;
   line-height: inherit;
   outline: none;
-}
+} */
 :root {
   --select-border: #777;;
 }
 .select {
   width: 50%;
-  min-width: 15ch;
-  max-width: 30ch;
+  min-width: 15.66ch;
+  max-width: 35ch;
   border: 2px solid var(--select-border);
   border-radius: 0em;
-  padding: 0.4em 0.5em;
+  /* padding: 0.4em 0.5em; */
   font-size: 1.25rem;
   cursor: pointer;
   line-height: 1.1;
   background-color: #fff;
   background-image: linear-gradient(to top, #f9f9f9, #fff 33%);
 }
+
+ 
+  
+
 
 input {
   transition-duration: 0.2s;
@@ -126,8 +145,7 @@ button:hover {
  
 }
 
-#movie-desc-box{
-
+#movie-desc-box {
   background-color: #2B2B2B;
   margin: 30px 20px;
 }
@@ -166,7 +184,6 @@ max-width: 90%;
 }
 
 
-
 h1 {
   font-family: 'Elsie Swash Caps', cursive, sans-serif;
   font-size: 48px; 
@@ -179,7 +196,7 @@ h1 {
 h2 {
   backdrop-filter: blur(3px);
   font-family: 'Roboto', sans-serif;
-
+  color: white
 }
 
 
@@ -223,7 +240,7 @@ h2 {
    margin-top: 20%;
   overflow: scroll;
   position:relative;
-  height: 40%;
+  height: 60%;
 
   margin-left: 50%;
 
