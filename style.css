@@ -1,14 +1,104 @@
-
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
+
 body {
-  background-color: #f5f7f7;
+  image-rendering: auto;
+  image-rendering: crisp-edges;
+
+  image-rendering: -webkit-optimize-contrast;
+  background: center center fixed; 
+  background-color: darkcyan;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  
   padding: 20px;
+  font-family:  'Roboto', sans-serif;
 }
+
+select {
+  background-color: transparent;
+  border: none;
+  padding: 0 1em 0 0;
+  margin: 0;
+  width: 100%;
+  font-family: inherit;
+  font-size: inherit;
+  cursor: inherit;
+  line-height: inherit;
+  outline: none;
+}
+:root {
+  --select-border: #777;;
+}
+.select {
+  width: 50%;
+  min-width: 15ch;
+  max-width: 30ch;
+  border: 2px solid var(--select-border);
+  border-radius: 0em;
+  padding: 0.4em 0.5em;
+  font-size: 1.25rem;
+  cursor: pointer;
+  line-height: 1.1;
+  background-color: #fff;
+  background-image: linear-gradient(to top, #f9f9f9, #fff 33%);
+}
+
+input {
+  transition-duration: 0.2s;
+}
+
+input:hover {
+  width: 50%;
+
+  min-width: 15ch;
+  max-width: 30ch;
+  border: 1px solid var(--select-border);
+  border-radius: .2em;
+  padding: 0.25em 0.5em;
+  font-size: 1.25rem;
+  cursor: pointer;
+  line-height: 1.1;
+  background-color:  #555555;
+  color: #f5f7f7
+}
+
+input {
+  width: 50%;
+  min-width: 15ch;
+  max-width: 30ch;
+  border: 1px solid var(--select-border);
+  border-radius: .2em;
+  padding: 0.25em 0.5em;
+  font-size: 1.25rem;
+  cursor: pointer;
+  line-height: 1.1;
+  background-color: #fff;
+
+}
+
+
+
+h1 {
+  font-family: 'Elsie Swash Caps', cursive, sans-serif;
+}
+h2 {
+  font-family: 'Roboto', sans-serif;
+
+}
+
+
+
+
 .flex-grid { 
   margin: 0 0 20px 0;
+  
 }
+
 .col {
  
   padding: 20px;
@@ -19,6 +109,12 @@ body {
   animation: fadeIn .8s;
 }
 
+.movie-card #large {
+
+  border: 5px solid #fff;
+  border-radius: .2em;
+  max-width: 85%;
+}
 @keyframes fadeIn {
   0% {
     opacity: 0.1;
@@ -50,6 +146,7 @@ body {
   font-size: 10px;
 
 }
+
 .movieList img {
   max-width: 45%;
   height:auto;
@@ -105,19 +202,7 @@ body {
   padding: 20px;
   background-color: #fff;
 }
-.formContainer input[type=text],
-.formContainer input[type=password] {
-  width: 100%;
-  padding: 15px;
-  margin: 5px 0 20px 0;
-  border: none;
-  background: #eee;
-}
-.formContainer input[type=text]:focus,
-.formContainer input[type=password]:focus {
-  background-color: #ddd;
-  outline: none;
-}
+
 .formContainer .btn {
   padding: 12px 20px;
   border: none;
@@ -159,5 +244,3 @@ body {
       order: 3;
     }
   } */ 
-
-

@@ -8,7 +8,7 @@ const mForm = document.querySelector(".movieForm");
 console.log(mForm);
 mForm.addEventListener("submit", fetchGenre);
 
-// fetchMyMovieList();
+fetchMyMovieList();
 
 function fetchGenre(e) {
   e.preventDefault();
@@ -59,9 +59,7 @@ function randomize(movies) {
 }
 
 function renderMovie(movie) {
-  // console.log(movie);
-  // console.log(movie.results[0].original_title)
-  console.log(movie);
+  
 
   const movieCard = document.createElement("div");
   movieCard.className = "movie-card";
@@ -83,8 +81,10 @@ function renderMovie(movie) {
   movieDesc.textContent = movie.overview;
 
   moviePoster.src = basePosterURL + movie.poster_path;
-  // const imgURL = moviePoster.src;
+  
+  const imgURL = moviePoster.src;
   moviePoster.className = "movie-poster";
+  moviePoster.id = "large"
 
   const movieContainer = document.querySelector(".movie-container");
 
@@ -95,6 +95,13 @@ function renderMovie(movie) {
   movieCard.append(movieTitle, moviePoster, movieDesc);
   movieContainer.innerHTML = " ";
   movieContainer.append(saveBttn, movieCard);
+
+  changeBG(imgURL)
+  
+}
+
+function changeBG(moviePoster){
+  document.querySelector('.background').style.backgroundImage = `linear-gradient(to bottom, crimson, transparent), url(${moviePoster})`
 }
 
 function renderMyMovieList(movie) {
@@ -114,7 +121,7 @@ function renderMyMovieList(movie) {
   movieTitle.textContent = movie.original_title;
 
   const moviePoster = document.createElement("img");
-  const basePosterURL = "https://image.tmdb.org/t/p/w400";
+  const basePosterURL = "https://image.tmdb.org/t/p/w500";
 
   moviePoster.src = basePosterURL + movie.poster_path;
   // const imgURL = moviePoster.src;
@@ -128,7 +135,7 @@ function renderMyMovieList(movie) {
   reviewButton.textContent = "Add a review";
   reviewButton.classList.add("openBttn");
   // reviewButton.id = "openBttn"
-  reviewButton.id = movie.id;
+  // reviewButton.id = movie.id;
   reviewButton.addEventListener("click", (e) =>  openTheForm(e, movieCard.id));
 
   const deleteButton = document.createElement("button");
@@ -195,6 +202,7 @@ function openTheForm(e) {
   document.getElementById("popupForm").style.display = "block";
 
   // fetch('http://localhost:3000/movieList/').then(resp => resp.json()).then(console.log)
+console.log("works")
 
   grabForm(e.target);
 }
@@ -220,6 +228,8 @@ function handleReview(review, movieBttn) {
   userReview.id = "review"
   userReview.textContent = review;
   // userReview.setAttribute('id', movieCardId)
+
+  console.log("LOOK HERE")
 
   const userReviewId =movieBttn.parentElement.querySelector(".movie-card")
 
