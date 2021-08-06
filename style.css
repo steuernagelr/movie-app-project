@@ -23,7 +23,7 @@ body {
   padding: 20px;
   font-family: 'Roboto', sans-serif;
   position: relative;
-  color:white
+
 }
 
 select {
@@ -66,12 +66,8 @@ select {
   cursor: pointer;
   line-height: 1.1;
   background-color: #fff;
-  background-image: linear-gradient(to top, #f9f9f9, #fff 33%);
+
 }
-
- 
-  
-
 
 input {
   transition-duration: 0.2s;
@@ -132,14 +128,13 @@ border-radius: 4px;
 }
 
 
-
 button:hover {
   background-color: #29C7AC;
 
 }
 
 .movie-container {
-  overflow: scroll;
+
   text-align: center;
  
 }
@@ -150,7 +145,7 @@ button:hover {
 }
 
 #middle h2 {
-  text-indent: 25px;
+ 
   text-align: center;
   font-size: large;
   margin-left: auto;
@@ -171,7 +166,7 @@ padding: 15px;
 }
 .movie-card {
 
-  overflow: scroll;
+  
 }
 .movie-card #large {
   border : solid 2px rgba(255,255,255, 0.4);
@@ -179,8 +174,24 @@ padding: 15px;
   display: block;
   margin-left: auto;
   margin-right: auto;
-max-width: 90%;
+  max-width: 90%;
+  transition: box-shadow .2s;
+  transition: transform .2s;
 }
+
+.movie-card #large:hover  {
+  transform: scale(1.025);
+  box-shadow: 0 0 11px rgba(33,33,33,.2); 
+  border : solid 2px rgba(255,255,255, 0.4);
+  border-radius: .1em;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 90%;
+
+}
+
+
 
 
 h1 {
@@ -237,7 +248,8 @@ h2 {
 
  .movieList {
    margin-top: 20%;
-  overflow: scroll;
+  overflow: auto;
+
   position:relative;
   height: 60%;
 

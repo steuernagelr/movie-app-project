@@ -87,11 +87,16 @@ function renderMovie(movie) {
   movieDescBox.id = "movie-desc-box";
   movieDescBox.append(movieDesc);
 
-  moviePoster.src = basePosterURL + movie.poster_path;
+ 
+  if (movie.poster_path == null) {
+    moviePoster.src = './500px-No-Image-Placeholder.svg.png'
+  } else
+  {moviePoster.src = basePosterURL + movie.poster_path;}
 
-  const imgURL = moviePoster.src;
   moviePoster.className = "movie-poster";
   moviePoster.id = "large";
+
+  const imgURL = moviePoster.src;
 
   const movieContainer = document.querySelector(".movie-container");
 
