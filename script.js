@@ -1,8 +1,10 @@
-// genre list https://api.themoviedb.org/3/genre/movie/list?api_key=30170f3751cc29da3d08369d25340c51&language=en-US
-//api key api_key=30170f3751cc29da3d08369d25340c51
+genre list https://api.themoviedb.org/3/genre/movie/list?api_key=30170f3751cc29da3d08369d25340c51&language=en-US
+api key api_key=30170f3751cc29da3d08369d25340c51
 const URL =
+
   // "https://api.themoviedb.org/3/discover/movie?api_key=30170f3751cc29da3d08369d25340c51&language=en-US&region=US&with_genres=";
   "https://api.themoviedb.org/3/discover/movie?api_key=30170f3751cc29da3d08369d25340c51&language=en-US&with_original_language=en&region=US&include_adult=false&include_video=false&with_genres=";
+
 
 const mForm = document.querySelector(".movieForm");
 console.log(mForm);
@@ -11,7 +13,7 @@ mForm.addEventListener("submit", fetchGenre);
 fetchMyMovieList();
 
 function fetchGenre(e) {
-  e.preventDefault();
+ e.preventDefault();
   const genreURL =
     "https://api.themoviedb.org/3/genre/movie/list?api_key=30170f3751cc29da3d08369d25340c51";
   fetch(genreURL)
@@ -169,6 +171,7 @@ function renderMyMovieList(movie) {
   movieCardContainer.append(movieCard, reviewButton, deleteButton);
   movieCard.append(movieTitle, moviePoster);
   movieList.prepend(movieCardContainer);
+
   // const movieListh2 = document.createElement("h2")
   // movieListh2.textContent = "My Movies"
   // if (movieListh2.textcontent = "")
@@ -176,6 +179,7 @@ function renderMyMovieList(movie) {
   mcontainer = document.querySelector(".movie-container");
   mcontainer.innerHTML = "";
   // console.log(mcontainer);
+
 }
 
 function saveMovie(e, movie) {
@@ -199,9 +203,11 @@ function fetchMyMovieList() {
     .then((o) => o.forEach(renderMyMovieList));
 }
 
+
 //   handleReview(e.target.new_review.value);
 //   reviewForm.reset();
 // });
+
 
 function openTheForm(e) {
   console.log(e.target.id);
